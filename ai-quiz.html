@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator - QuizTantra</title>
+    <link rel="stylesheet" href="public/css/ai-quiz.css">
+    <link rel="stylesheet" href="public/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="theme-ball"></div>
+            </label>
+        </div>
+
+        <!-- Social Sidebar -->
+        <div class="social-sidebar">
+            <div class="social-glass">
+                <a href="https://www.linkedin.com/in/aman-kumar-216bbb255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/amankr421?tab=repositories" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="aman06052004@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://x.com/AmanKumar41235?t=hf9WL_MpPzDalhpzqZTFPA&s=09" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="public/images/logo2.png" alt="QuizTantra Logo" class="logo-img">
+                    <span>QuizTantra</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="playquiz.html" class="nav-link">Play Quiz</a></li>
+                        <li><a href="ai-quiz.html" class="nav-link active">AI Quiz</a></li>
+                        <li><a href="categories.html" class="nav-link">Categories</a></li>
+                        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-btns">
+                        <button class="login-btn glass-btn" id="login-btn">Login</button>
+                        <button class="signup-btn glass-btn" id="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- AI Quiz Content -->
+        <main class="main-content">
+            <!-- Topic Selection Screen -->
+            <div id="topic-selection-screen" class="screen active">
+                <div class="topic-selection-container">
+                    <div class="topic-header">
+                        <h1>🎯 AI Quiz Generator</h1>
+                        <p>Enter any topic and get AI-generated questions instantly!</p>
+                    </div>
+
+                    <!-- <div class="topic-input-section"> -->
+                        <div class="input-card">
+                            <div class="input-header">
+                                <i class="fas fa-robot"></i>
+                                <h3>Generate Your Custom Quiz</h3>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="text" id="topic-input" placeholder=" Enter Any Topic ">
+                                <div class="suggestions">
+                                    <span class="suggestion-tag" data-topic="Artificial Intelligence">AI</span>
+                                    <span class="suggestion-tag" data-topic="Machine Learning">ML</span>
+                                    <span class="suggestion-tag" data-topic="Space Exploration">Space</span>
+                                    <span class="suggestion-tag" data-topic="Ancient History">History</span>
+                                    <span class="suggestion-tag" data-topic="Renewable Energy">Energy</span>
+                                    <span class="suggestion-tag" data-topic="Renewable Energy">etc..</span>
+                                </div>
+                            </div>
+
+                            <div class="quiz-settings">
+                                <div class="setting-group">
+                                    <label for="question-count"><i class="fas fa-list-ol"></i> Number of Questions</label>
+                                    <div class="range-container">
+                                        <input type="range" id="question-count" min="5" max="30" value="10">
+                                        <span id="count-display">10 questions</span>
+                                    </div>
+                                </div>
+
+                                <div class="setting-group">
+                                    <label for="difficulty"><i class="fas fa-chart-line"></i> Difficulty Level</label>
+                                    <select id="difficulty">
+                                        <option value="easy">Easy</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="hard">Hard</option>
+                                    </select>
+                                </div>
+
+                                <div class="setting-group">
+                                    <label for="question-type"><i class="fas fa-question-circle"></i> Question Type</label>
+                                    <select id="question-type">
+                                        <option value="multiple_choice" selected>Multiple Choice</option>
+                                        <option value="true_false">True/False</option>
+                                        <option value="mixed">Mixed</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button id="generate-quiz-btn" class="generate-btn">
+                                <i class="fas fa-magic"></i> Generate AI Quiz
+                            </button>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="recent-topics">
+                        <h3>🔥 Recently Generated Topics</h3>
+                        <div class="topics-grid">
+                            <div class="topic-chip">
+                                <span>Web Development</span>
+                                <small>15 questions</small>
+                            </div>
+                            <div class="topic-chip">
+                                <span>Climate Change</span>
+                                <small>10 questions</small>
+                            </div>
+                            <div class="topic-chip">
+                                <span>Quantum Physics</span>
+                                <small>8 questions</small>
+                            </div>
+                            <div class="topic-chip">
+                                <span>Digital Marketing</span>
+                                <small>12 questions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Screen -->
+            <div id="loading-screen" class="screen">
+                <div class="loading-container">
+                    <div class="ai-loader">
+                        <div class="loader-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h2>AI is Generating Your Quiz...</h2>
+                        <p>Our AI is carefully crafting questions about: <span id="generating-topic"></span></p>
+                        
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="ai-progress"></div>
+                            </div>
+                            <div class="progress-steps">
+                                <div class="step active">
+                                    <i class="fas fa-search"></i>
+                                    <span>Analyzing Topic</span>
+                                </div>
+                                <div class="step">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>Generating Questions</span>
+                                </div>
+                                <div class="step">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Finalizing Quiz</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fun-facts">
+                            <h4>Did You Know? 🤔</h4>
+                            <p id="fun-fact">AI can generate unique quiz questions in seconds that would take humans hours to create!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="ai-quiz-screen" class="screen">
+                <div class="ai-quiz-container">
+                    <div class="quiz-header">
+                        <div class="quiz-info">
+                            <h3 id="ai-quiz-topic">Topic: Artificial Intelligence</h3>
+                            <p id="ai-quiz-settings">10 Questions • Medium Difficulty</p>
+                        </div>
+                        <div class="quiz-stats">
+                            <div class="stat-box">
+                                <span class="stat-label">Time</span>
+                                <span id="ai-timer" class="stat-value">∞</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Score</span>
+                                <span id="ai-current-score" class="stat-value">0</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-label">Progress</span>
+                                <span id="ai-question-counter" class="stat-value">1/10</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-content">
+                        <div class="progress-bar">
+                            <div id="ai-progress-fill" class="progress-fill"></div>
+                        </div>
+                        
+                        <div class="question-container">
+                            <h2 id="ai-question">Question will appear here</h2>
+                            <div id="ai-answer-buttons" class="answer-buttons"></div>
+                        </div>
+                        
+                        <div class="quiz-navigation">
+                            <button id="ai-prev-btn" class="nav-btn">
+                                <i class="fas fa-arrow-left"></i> Previous
+                            </button>
+                            <button id="ai-next-btn" class="nav-btn primary">
+                                Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button id="ai-submit-btn" class="nav-btn submit">
+                                Submit Quiz <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="ai-results-screen" class="screen">
+                <div class="ai-results-container">
+                    <div class="results-header">
+                        <div class="results-badge">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h2>AI Quiz Completed! 🎉</h2>
+                        <p id="results-subtitle">Great job testing your knowledge!</p>
+                    </div>
+
+                    <div class="results-content">
+                        <div class="score-summary">
+                            <div class="score-circle">
+                                <div class="circle-progress">
+                                    <svg width="120" height="120" viewBox="0 0 120 120">
+                                        <circle cx="60" cy="60" r="54" fill="none" stroke="var(--glass-bg)" stroke-width="8"></circle>
+                                        <circle id="score-circle" cx="60" cy="60" r="54" fill="none" stroke="url(#gradient)" stroke-width="8" stroke-linecap="round" transform="rotate(-90 60 60)" stroke-dasharray="339.292" stroke-dashoffset="339.292"></circle>
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="var(--primary-color)" />
+                                                <stop offset="100%" stop-color="var(--secondary-color)" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="score-text">
+                                    <span id="ai-final-score">0</span>
+                                    <small>Score</small>
+                                </div>
+                            </div>
+
+                            <div class="score-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Topic</span>
+                                    <span id="results-topic" class="detail-value">Artificial Intelligence</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Questions</span>
+                                    <span id="results-total" class="detail-value">10</span>
+                                </div>
+                                <div class="detail-item correct">
+                                    <span class="detail-label">Correct</span>
+                                    <span id="results-correct" class="detail-value">0</span>
+                                </div>
+                                <div class="detail-item incorrect">
+                                    <span class="detail-label">Incorrect</span>
+                                    <span id="results-incorrect" class="detail-value">0</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Time Taken</span>
+                                    <span id="results-time" class="detail-value">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="action-buttons">
+                            <button id="review-ai-answers" class="action-btn primary">
+                                <i class="fas fa-eye"></i> Review Answers
+                            </button>
+                            <button id="new-ai-quiz" class="action-btn">
+                                <i class="fas fa-plus"></i> New AI Quiz
+                            </button>
+                            <button id="share-ai-results" class="action-btn">
+                                <i class="fas fa-share"></i> Share Results
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Screen -->
+            <div id="ai-review-screen" class="screen">
+                <div class="ai-review-container">
+                    <div class="review-header">
+                        <h2>📝 Quiz Review & Explanations</h2>
+                        <p>Learn from detailed AI explanations for each question</p>
+                    </div>
+
+                    <div id="ai-review-questions" class="review-questions"></div>
+
+                    <div class="review-actions">
+                        <button id="back-to-ai-results" class="btn back">
+                            <i class="fas fa-arrow-left"></i> Back to Results
+                        </button>
+                        <button id="new-ai-quiz-from-review" class="btn primary">
+                            <i class="fas fa-robot"></i> Generate New Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>QuizTantra</h3>
+                    <p>The ultimate platform for testing your knowledge and learning through fun quizzes.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="playquiz.html">Play Quiz</a>
+                    <a href="ai-quiz.html">AI Quiz</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/amankr421?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/AmanKumar41235?t=hf9WL_MpPzDalhpzqZTFPA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mr_aman421?igsh=MW93NnZ4MWFsaWtvaw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-kumar-216bbb255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuizTantra. All Rights Reserved. | Crafted with ❤️ by Aman Kumar</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="public/js/main.js"></script>
+    <script src="public/js/ai-quiz.js"></script>
+</body>
+</html>

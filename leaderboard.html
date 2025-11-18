@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - QuizTantra</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="theme-ball"></div>
+            </label>
+        </div>
+
+        <!-- Social Sidebar -->
+        <div class="social-sidebar">
+            <div class="social-glass">
+                <a href="https://www.linkedin.com/in/aman-kumar-216bbb255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/amankr421?tab=repositories" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="aman06052004@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://x.com/AmanKumar41235?t=hf9WL_MpPzDalhpzqZTFPA&s=09" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="public/images/logo2.png" alt="QuizTantra Logo" class="logo-img">
+                    <span>QuizTantra</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="playquiz.html" class="nav-link">Play Quiz</a></li>
+                        <li><a href="ai-quiz.html" class="nav-link">AI Quiz</a></li>
+                        <li><a href="categories.html" class="nav-link">Categories</a></li>
+                        <li><a href="leaderboard.html" class="nav-link">Leaderboard</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-btns">
+                        <button class="login-btn glass-btn" id="login-btn">Login</button>
+                        <button class="signup-btn glass-btn" id="signup-btn">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Leaderboard Content -->
+        <main class="main-content">
+            <section class="leaderboard-hero">
+                <div class="container">
+                    <div class="leaderboard-header">
+                        <h1>🏆 Global Leaderboard</h1>
+                        <p>See where you stand among the brightest minds</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="leaderboard-section">
+                <div class="container">
+                    <div class="leaderboard-content">
+                        <div class="leaderboard-filters">
+                            <div class="filter-group">
+                                <h3>Time Period</h3>
+                                <div class="time-filter">
+                                    <button class="filter-btn active" data-period="all">All Time</button>
+                                    <button class="filter-btn" data-period="month">This Month</button>
+                                    <button class="filter-btn" data-period="week">This Week</button>
+                                    <button class="filter-btn" data-period="today">Today</button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h3>Category</h3>
+                                <select id="category-filter" class="category-filter">
+                                    <option value="all">All Categories</option>
+                                    <option value="gk">General Knowledge</option>
+                                    <option value="science">Science</option>
+                                    <option value="history">History</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="sports">Sports</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="total-players">500+</h3>
+                                    <p>Total Players</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="top-score">98%</h3>
+                                    <p>Highest Score</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h3 id="avg-score">76%</h3>
+                                    <p>Average Score</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-main">
+                            <div class="top-three">
+                                <div class="podium second">
+                                    <div class="podium-rank">2</div>
+                                    <div class="podium-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="podium-info">
+                                        <h4>Gopi Saraswat</h4>
+                                        <p>Science Master</p>
+                                        <div class="score">95%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="podium first">
+                                    <div class="podium-rank">1</div>
+                                    <div class="podium-avatar">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <div class="podium-info">
+                                        <h4>Tushar Verma</h4>
+                                        <p>Quiz Champion</p>
+                                        <div class="score">98%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="podium third">
+                                    <div class="podium-rank">3</div>
+                                    <div class="podium-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="podium-info">
+                                        <h4>Narendra Singh</h4>
+                                        <p>History Buff</p>
+                                        <div class="score">92%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="leaderboard-list" id="leaderboard-list">
+                                <!-- Leaderboard items will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="user-ranking">
+                            <div class="user-rank-card">
+                                <div class="rank-info">
+                                    <span class="rank-label">Your Rank</span>
+                                    <span class="rank-value">#47</span>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="user-details">
+                                        <h4>You</h4>
+                                        <p>Keep playing to improve!</p>
+                                    </div>
+                                </div>
+                                <div class="user-score">
+                                    <span class="score-value">82%</span>
+                                    <span class="score-label">Best Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements-section">
+                <div class="container">
+                    <h2 class="section-title">Recent Achievements</h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon gold">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>First Perfect Score</h3>
+                            <p>Aman Kumar achieved 100% in Science category</p>
+                            <span class="achievement-time">2 hours ago</span>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon silver">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Category Master</h3>
+                            <p>Rahul Singh mastered all History questions</p>
+                            <span class="achievement-time">5 hours ago</span>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon bronze">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Speed Demon</h3>
+                            <p>Davendra Singh completed quiz in record time</p>
+                            <span class="achievement-time">1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>QuizTantra</h3>
+                    <p>The ultimate platform for testing your knowledge and learning through fun quizzes.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="playquiz.html">Play Quiz</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/amankr421?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/AmanKumar41235?t=hf9WL_MpPzDalhpzqZTFPA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mr_aman421?igsh=MW93NnZ4MWFsaWtvaw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-kumar-216bbb255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuizTantra. All Rights Reserved. | Crafted with ❤️ by Aman Kumar</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="public/js/main.js"></script>
+    <script src="public/js/leaderboard.js"></script>
+</body>
+</html>
