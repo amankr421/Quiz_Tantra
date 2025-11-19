@@ -19,7 +19,9 @@ let aiQuizState = {
     endTime: null
 };
 
-const BACKEND_URL = "http://localhost:5000";
+// const BACKEND_URL = "http://localhost:5000";
+const BACKEND_URL = "https://quiz-tantra.onrender.com";
+
 
 function initAIQuiz() {
     setupEventListeners();
