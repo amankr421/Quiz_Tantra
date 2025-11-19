@@ -19,13 +19,8 @@ let aiQuizState = {
     endTime: null
 };
 
+const BACKEND_URL = "http://localhost:5000";
 
-// const BACKEND_URL = 'https://your-backend-url.vercel.app';
-// const BACKEND_URL = window.location.hostname === 'localhost' 
-//     ? 'http://localhost:5000' 
-//     : 'https://your-backend-url.vercel.app';
-
-const BACKEND_URL = 'http://localhost:5000';
 function initAIQuiz() {
     setupEventListeners();
     setupSuggestionTags();
@@ -109,7 +104,9 @@ function setupRangeInput() {
 async function testBackendConnection() {
     try {
         console.log('Testing backend connection to:', BACKEND_URL);
+        // const response = await fetch(`${BACKEND_URL}/api/generate-quiz`);
         const response = await fetch(`${BACKEND_URL}/api/health`);
+
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
