@@ -1,10 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     console.log('AI Quiz Generator Loaded - Fixed Version');
     initAIQuiz();
     testBackendConnection();
 });
-
 
 let aiQuizState = {
     questions: [],
@@ -22,6 +20,48 @@ let aiQuizState = {
 // const BACKEND_URL = "http://localhost:5000";
 const BACKEND_URL = "https://quiz-tantra.onrender.com";
 
+// Scroll Functions - IMPROVED VERSION
+function scrollToQuizSection() {
+    setTimeout(() => {
+        const quizSection = document.querySelector('#ai-quiz-screen');
+        if (quizSection) {
+            // Ensure the screen is visible
+            quizSection.style.display = 'block';
+            quizSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, 300); // Increased delay for better rendering
+}
+
+function scrollToScoreSection() {
+    setTimeout(() => {
+        const scoreSection = document.querySelector('#ai-results-screen');
+        if (scoreSection) {
+            // Ensure the screen is visible
+            scoreSection.style.display = 'block';
+            scoreSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, 300);
+}
+
+function scrollToReviewSection() {
+    setTimeout(() => {
+        const reviewSection = document.querySelector('#ai-review-screen');
+        if (reviewSection) {
+            // Ensure the screen is visible
+            reviewSection.style.display = 'block';
+            reviewSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, 300);
+}
 
 function initAIQuiz() {
     setupEventListeners();
@@ -40,7 +80,6 @@ function setupEventListeners() {
         });
     }
 
-   
     const nextBtn = document.getElementById('ai-next-btn');
     const prevBtn = document.getElementById('ai-prev-btn');
     const submitBtn = document.getElementById('ai-submit-btn');
@@ -49,7 +88,6 @@ function setupEventListeners() {
     if (prevBtn) prevBtn.addEventListener('click', prevAIQuestion);
     if (submitBtn) submitBtn.addEventListener('click', submitAIQuiz);
 
-    
     const reviewBtn = document.getElementById('review-ai-answers');
     const newQuizBtn = document.getElementById('new-ai-quiz');
     const shareBtn = document.getElementById('share-ai-results');
@@ -102,29 +140,46 @@ function setupRangeInput() {
     });
 }
 
+// async function testBackendConnection() {
+//     try {
+//         console.log('Testing backend connection to:', BACKEND_URL);
+//         const response = await fetch(`${BACKEND_URL}/api/health`);
 
-async function testBackendConnection() {
-    try {
-        console.log('Testing backend connection to:', BACKEND_URL);
-        // const response = await fetch(`${BACKEND_URL}/api/generate-quiz`);
-        const response = await fetch(`${BACKEND_URL}/api/health`);
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
+        
+//         const data = await response.json();
+//         console.log('✅ Backend connected:', data);
+//         showNotification('Backend connected successfully!', 'success');
+//         return true;
+//     } catch (error) {
+//         console.error('❌ Backend connection failed:', error);
+//         showNotification('Backend connection failed - using fallback mode', 'warning');
+//         return false;
+//     }
+// }
 
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        console.log('✅ Backend connected:', data);
-        showNotification('Backend connected successfully!', 'success');
-        return true;
-    } catch (error) {
-        console.error('❌ Backend connection failed:', error);
-        showNotification('Backend connection failed - using fallback mode', 'warning');
-        return false;
+// Button Loading State Functions
+function setGenerateButtonLoading() {
+    const generateBtn = document.getElementById('generate-quiz-btn');
+    if (generateBtn) {
+        generateBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating AI Quiz...';
+        generateBtn.disabled = true;
+        generateBtn.style.opacity = '0.8';
+        generateBtn.style.cursor = 'not-allowed';
     }
 }
 
+function resetGenerateButton() {
+    const generateBtn = document.getElementById('generate-quiz-btn');
+    if (generateBtn) {
+        generateBtn.innerHTML = '<i class="fas fa-magic"></i> Generate AI Quiz';
+        generateBtn.disabled = false;
+        generateBtn.style.opacity = '1';
+        generateBtn.style.cursor = 'pointer';
+    }
+}
 
 async function generateAIQuiz() {
     const topicInput = document.getElementById('topic-input');
@@ -139,6 +194,9 @@ async function generateAIQuiz() {
         showNotification('Please enter a more specific topic', 'error');
         return;
     }
+
+    // Set button to loading state
+    setGenerateButtonLoading();
 
     aiQuizState.currentTopic = topic;
     aiQuizState.startTime = new Date();
@@ -186,6 +244,9 @@ async function generateAIQuiz() {
             updateAIQuizHeader();
             showAIQuestion();
             
+            // Scroll to quiz section after generation
+            scrollToQuizSection();
+            
             showNotification(`Generated ${data.questions.length} AI questions successfully!`, 'success');
         } else {
             throw new Error(data.error || 'No questions generated by AI');
@@ -196,9 +257,11 @@ async function generateAIQuiz() {
         showNotification('AI generation failed. Using sample questions instead.', 'warning');
 
         useMockQuestions(topic);
+    } finally {
+        // Always reset button state
+        resetGenerateButton();
     }
 }
-
 
 function generateMockQuestions(topic, count) {
     const questions = [];
@@ -251,8 +314,9 @@ function useMockQuestions(topic) {
     showScreen('ai-quiz-screen');
     updateAIQuizHeader();
     showAIQuestion();
+    // Scroll to quiz section for mock questions too
+    scrollToQuizSection();
 }
-
 
 function showScreen(screenId) {
     const screens = document.querySelectorAll('.screen');
@@ -399,6 +463,8 @@ function prevAIQuestion() {
 function submitAIQuiz() {
     aiQuizState.endTime = new Date();
     showAIResults();
+    // Scroll to score section after submission
+    scrollToScoreSection();
 }
 
 function showAIResults() {
@@ -480,6 +546,8 @@ function generateAIPerformanceInsights(percentage, correct, total) {
 function showAIReview() {
     showScreen('ai-review-screen');
     displayAIReviewQuestions();
+    // Scroll to review section when clicking Review Answers
+    scrollToReviewSection();
 }
 
 function displayAIReviewQuestions() {
@@ -559,7 +627,6 @@ function shareAIResults() {
         navigator.clipboard.writeText(shareText).then(() => showNotification('Results copied to clipboard!', 'success'));
     }
 }
-
 
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
