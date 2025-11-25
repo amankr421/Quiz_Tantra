@@ -155,100 +155,101 @@ Continue with Q2 to Q${count} in same format. Make questions conceptual and exam
         displayQuestion(currentQuestionIndex);
     }
     
+    // Parse MCQ text
     // Parse MCQ text - IMPROVED VERSION
-    function parseMCQText(text) {
-        const questions = [];
-        
-        // First, try to detect if it's single-line format and add line breaks
-        let formattedText = text;
-        
-        // Add line breaks after questions, options, answers, and explanations
-        formattedText = formattedText
-            .replace(/(Q\d+\.)/g, '\n$1')  // Add break before Q
-            .replace(/([A-D]\))/g, '\n$1') // Add break before options
-            .replace(/(Answer:)/g, '\n$1') // Add break before Answer
-            .replace(/(Explanation:)/g, '\n$1'); // Add break before Explanation
-        
-        const questionBlocks = formattedText.split(/(?=Q\d+\.)/).filter(block => block.trim());
-        
-        for (const block of questionBlocks) {
-            try {
-                const lines = block.trim().split('\n').filter(line => line.trim());
-                
-                if (lines.length < 7) {
-                    console.log('Skipping block - insufficient lines:', lines);
-                    continue;
-                }
-                
-                // Extract question number and text
-                const questionMatch = lines[0].match(/Q(\d+)\.\s*(.+)/);
-                if (!questionMatch) {
-                    console.log('No question match for:', lines[0]);
-                    continue;
-                }
-                
-                const questionNumber = parseInt(questionMatch[1]);
-                const questionText = questionMatch[2].trim();
-                
-                // Extract options (next 4 lines starting with A), B), C), D)
-                const options = [];
-                let optionIndex = 1;
-                
-                while (optionIndex < lines.length && optionIndex <= 4) {
-                    if (lines[optionIndex] && lines[optionIndex].match(/^[A-D]\)/)) {
-                        const optionText = lines[optionIndex].substring(3).trim();
-                        options.push(optionText);
-                        optionIndex++;
-                    } else {
-                        break;
-                    }
-                }
-                
-                // Extract answer and explanation
-                let correctAnswer = '';
-                let explanation = '';
-                
-                for (let i = optionIndex; i < lines.length; i++) {
-                    if (lines[i].startsWith('Answer:')) {
-                        correctAnswer = lines[i].substring(7).trim().charAt(0); // Take only first character
-                    } else if (lines[i].startsWith('Explanation:')) {
-                        explanation = lines[i].substring(12).trim();
-                        // If explanation continues on next lines
-                        for (let j = i + 1; j < lines.length; j++) {
-                            if (lines[j] && !lines[j].startsWith('Q')) {
-                                explanation += ' ' + lines[j].trim();
-                            } else {
-                                break;
-                            }
-                        }
-                        break;
-                    }
-                }
-                
-                if (questionText && options.length === 4 && correctAnswer) {
-                    questions.push({
-                        number: questionNumber,
-                        text: questionText,
-                        options: options,
-                        correctAnswer: correctAnswer,
-                        explanation: explanation || 'No explanation provided.'
-                    });
-                    console.log('Successfully parsed question:', questionNumber);
-                } else {
-                    console.log('Invalid question format:', {
-                        questionText: !!questionText,
-                        options: options.length,
-                        correctAnswer: !!correctAnswer
-                    });
-                }
-            } catch (error) {
-                console.error('Error parsing question block:', error, 'Block:', block);
+function parseMCQText(text) {
+    const questions = [];
+    
+    // First, try to detect if it's single-line format and add line breaks
+    let formattedText = text;
+    
+    // Add line breaks after questions, options, answers, and explanations
+    formattedText = formattedText
+        .replace(/(Q\d+\.)/g, '\n$1')  // Add break before Q
+        .replace(/([A-D]\))/g, '\n$1') // Add break before options
+        .replace(/(Answer:)/g, '\n$1') // Add break before Answer
+        .replace(/(Explanation:)/g, '\n$1'); // Add break before Explanation
+    
+    const questionBlocks = formattedText.split(/(?=Q\d+\.)/).filter(block => block.trim());
+    
+    for (const block of questionBlocks) {
+        try {
+            const lines = block.trim().split('\n').filter(line => line.trim());
+            
+            if (lines.length < 7) {
+                console.log('Skipping block - insufficient lines:', lines);
+                continue;
             }
+            
+            // Extract question number and text
+            const questionMatch = lines[0].match(/Q(\d+)\.\s*(.+)/);
+            if (!questionMatch) {
+                console.log('No question match for:', lines[0]);
+                continue;
+            }
+            
+            const questionNumber = parseInt(questionMatch[1]);
+            const questionText = questionMatch[2].trim();
+            
+            // Extract options (next 4 lines starting with A), B), C), D)
+            const options = [];
+            let optionIndex = 1;
+            
+            while (optionIndex < lines.length && optionIndex <= 4) {
+                if (lines[optionIndex] && lines[optionIndex].match(/^[A-D]\)/)) {
+                    const optionText = lines[optionIndex].substring(3).trim();
+                    options.push(optionText);
+                    optionIndex++;
+                } else {
+                    break;
+                }
+            }
+            
+            // Extract answer and explanation
+            let correctAnswer = '';
+            let explanation = '';
+            
+            for (let i = optionIndex; i < lines.length; i++) {
+                if (lines[i].startsWith('Answer:')) {
+                    correctAnswer = lines[i].substring(7).trim().charAt(0); // Take only first character
+                } else if (lines[i].startsWith('Explanation:')) {
+                    explanation = lines[i].substring(12).trim();
+                    // If explanation continues on next lines
+                    for (let j = i + 1; j < lines.length; j++) {
+                        if (lines[j] && !lines[j].startsWith('Q')) {
+                            explanation += ' ' + lines[j].trim();
+                        } else {
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            
+            if (questionText && options.length === 4 && correctAnswer) {
+                questions.push({
+                    number: questionNumber,
+                    text: questionText,
+                    options: options,
+                    correctAnswer: correctAnswer,
+                    explanation: explanation || 'No explanation provided.'
+                });
+                console.log('Successfully parsed question:', questionNumber);
+            } else {
+                console.log('Invalid question format:', {
+                    questionText: !!questionText,
+                    options: options.length,
+                    correctAnswer: !!correctAnswer
+                });
+            }
+        } catch (error) {
+            console.error('Error parsing question block:', error, 'Block:', block);
         }
-        
-        console.log('Total questions parsed:', questions.length);
-        return questions;
     }
+    
+    console.log('Total questions parsed:', questions.length);
+    return questions;
+}
     
     // Generate sample questions (for demo)
     function generateSampleQuestions(topic, count) {
