@@ -1,0 +1,3062 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "GK & GS",
+      "description": "General Knowledge and General Studies",
+      "icon": "🌍",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Who is the Father of the Indian Constitution?",
+          "options": ["Jawaharlal Nehru", "B. R. Ambedkar", "Sardar Patel", "Mahatma Gandhi"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "B. R. Ambedkar is known as the Father of the Indian Constitution",
+          "points": 10
+        },
+        {
+          "id": 2,
+          "question": "Which Indian state has the longest coastline?",
+          "options": ["Maharashtra", "Tamil Nadu", "Gujarat", "Andhra Pradesh"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Gujarat has the longest coastline among Indian states",
+          "points": 15
+        },
+        {
+          "id": 3,
+          "question": "Which of these is the largest river in India by volume?",
+          "options": ["Yamuna", "Ganga", "Godavari", "Brahmaputra"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Brahmaputra carries the largest volume of water among Indian rivers",
+          "points": 15
+        },
+        {
+          "id": 4,
+          "question": "The 'Quit India' movement was launched in which year?",
+          "options": ["1940", "1942", "1945", "1947"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Quit India Movement was launched in 1942",
+          "points": 10
+        },
+        {
+          "id": 5,
+          "question": "What is the primary function of the Indian Space Research Organisation (ISRO)?",
+          "options": ["Military defense", "Space exploration and satellite technology", "Nuclear research", "Agricultural research"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "ISRO is responsible for space exploration and satellite technology",
+          "points": 10
+        },
+        {
+          "id": 6,
+          "question": "In which city is the famous Victoria Memorial located?",
+          "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Victoria Memorial is located in Kolkata",
+          "points": 10
+        },
+        {
+          "id": 7,
+          "question": "The 'Golden Temple' of Amritsar is the most sacred site for which religion?",
+          "options": ["Buddhism", "Jainism", "Sikhism", "Hinduism"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Golden Temple is the holiest shrine in Sikhism",
+          "points": 10
+        },
+        {
+          "id": 8,
+          "question": "Which mountain range is the source of the Ganges and Yamuna rivers?",
+          "options": ["Himalayas", "Aravalli Range", "Western Ghats", "Satpura Range"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Both Ganges and Yamuna originate from the Himalayas",
+          "points": 10
+        },
+        {
+          "id": 9,
+          "question": "Which Indian city is known as the 'Silicon Valley of India'?",
+          "options": ["Hyderabad", "Chennai", "Pune", "Bengaluru"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "Bengaluru is known as the Silicon Valley of India",
+          "points": 10
+        },
+        {
+          "id": 10,
+          "question": "What is the scientific name of the national tree of India, the Banyan?",
+          "options": ["Ficus benghalensis", "Mangifera indica", "Azadirachta indica", "Shorea robusta"],
+          "correctAnswer": 0,
+          "difficulty": "hard",
+          "explanation": "Ficus benghalensis is the scientific name for Banyan tree",
+          "points": 20
+        },
+        {
+          "id": 11,
+          "question": "The first Indian to win the Nobel Prize was...",
+          "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Rabindranath Tagore was the first Indian Nobel laureate in 1913",
+          "points": 15
+        },
+        {
+          "id": 12,
+          "question": "Which of the following is a classical dance form from North India?",
+          "options": ["Kathak", "Bharatanatyam", "Kathakali", "Odissi"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Kathak originated in North India",
+          "points": 15
+        },
+        {
+          "id": 13,
+          "question": "The famous 'Sunderbans' forest is known for which animal?",
+          "options": ["Asiatic Lion", "One-horned Rhino", "Royal Bengal Tiger", "Snow Leopard"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sunderbans is famous for Royal Bengal Tigers",
+          "points": 10
+        },
+        {
+          "id": 14,
+          "question": "The 'Father of Indian Cinema' is a title given to which person?",
+          "options": ["Satyajit Ray", "Dadasaheb Phalke", "Raj Kapoor", "Guru Dutt"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Dadasaheb Phalke is known as the Father of Indian Cinema",
+          "points": 15
+        },
+        {
+          "id": 15,
+          "question": "What is the main source of vitamin D?",
+          "options": ["Fruits", "Vegetables", "Sunlight", "Water"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sunlight is the primary source of Vitamin D",
+          "points": 10
+        },
+        {
+          "id": 16,
+          "question": "Which monument was built to commemorate the visit of King George V and Queen Mary to Mumbai?",
+          "options": ["Gateway of India", "India Gate", "Charminar", "Qutub Minar"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Gateway of India was built to commemorate the royal visit",
+          "points": 15
+        },
+        {
+          "id": 17,
+          "question": "The 'Rani ki Vav' stepwell, a UNESCO World Heritage site, is located in which state?",
+          "options": ["Rajasthan", "Gujarat", "Karnataka", "Maharashtra"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Rani ki Vav is located in Patan, Gujarat",
+          "points": 20
+        },
+        {
+          "id": 18,
+          "question": "Which vitamin is crucial for blood clotting?",
+          "options": ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Vitamin K is essential for blood clotting",
+          "points": 15
+        },
+        {
+          "id": 19,
+          "question": "The currency of India is the Rupee. What is its symbol?",
+          "options": ["₹", "$", "€", "£"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "₹ is the symbol for Indian Rupee",
+          "points": 10
+        },
+        {
+          "id": 20,
+          "question": "Who was the first woman Prime Minister of India?",
+          "options": ["Sarojini Naidu", "Sonia Gandhi", "Indira Gandhi", "Pratibha Patil"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Indira Gandhi was the first woman Prime Minister of India",
+          "points": 10
+        },
+        {
+          "id": 21,
+          "question": "The first successful nuclear test in India was conducted in which state?",
+          "options": ["Maharashtra", "Gujarat", "Rajasthan", "Tamil Nadu"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "First nuclear test was conducted in Pokhran, Rajasthan",
+          "points": 20
+        },
+        {
+          "id": 22,
+          "question": "What is the full form of 'BSE' in the context of the Indian stock market?",
+          "options": ["Bank of Standard Exchange", "Bombay Stock Exchange", "Bharat Stock Exchange", "Basic Stock Exchange"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "BSE stands for Bombay Stock Exchange",
+          "points": 10
+        },
+        {
+          "id": 23,
+          "question": "The national anthem of India, 'Jana Gana Mana', was originally composed in which language?",
+          "options": ["Hindi", "Bengali", "Sanskrit", "Marathi"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Jana Gana Mana was originally written in Bengali by Rabindranath Tagore",
+          "points": 15
+        },
+        {
+          "id": 24,
+          "question": "Which of these Indian cities is situated on the banks of the River Yamuna?",
+          "options": ["Lucknow", "Kanpur", "Agra", "Patna"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Agra is situated on the banks of Yamuna river",
+          "points": 15
+        },
+        {
+          "id": 25,
+          "question": "The term 'Zero Hour' in the Indian Parliament refers to...",
+          "options": ["The first hour of the session", "The last hour of the session", "The period immediately following the Question Hour", "The time before the session begins"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Zero Hour is the period immediately following Question Hour",
+          "points": 20
+        },
+        {
+          "id": 26,
+          "question": "The 'Fundamental Duties' were added to the Indian Constitution on the recommendation of which committee?",
+          "options": ["Shah Commission", "Swaran Singh Committee", "Sarkaria Commission", "Kothari Commission"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Swaran Singh Committee recommended adding Fundamental Duties",
+          "points": 20
+        },
+        {
+          "id": 27,
+          "question": "Which Indian state is the largest producer of rice?",
+          "options": ["Punjab", "Uttar Pradesh", "West Bengal", "Andhra Pradesh"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "West Bengal is the largest producer of rice in India",
+          "points": 15
+        },
+        {
+          "id": 28,
+          "question": "The 'Ajanta Caves' are primarily associated with the art of which religion?",
+          "options": ["Jainism", "Hinduism", "Buddhism", "Sikhism"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Ajanta Caves feature Buddhist rock-cut monuments",
+          "points": 15
+        },
+        {
+          "id": 29,
+          "question": "Who authored the famous book 'Discovery of India'?",
+          "options": ["Mahatma Gandhi", "B. R. Ambedkar", "Jawaharlal Nehru", "Rabindranath Tagore"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Jawaharlal Nehru wrote 'Discovery of India'",
+          "points": 15
+        },
+        {
+          "id": 30,
+          "question": "Which day is celebrated as 'National Science Day' in India?",
+          "options": ["January 15th", "February 28th", "May 5th", "December 1st"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "National Science Day is celebrated on February 28th to mark Raman Effect discovery",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Coding",
+      "description": "Programming and Computer Science",
+      "icon": "💻",
+      "questions": [
+        {
+          "id": 31,
+          "question": "What is the primary function of CSS?",
+          "options": ["Managing databases", "Adding interactivity to websites", "Structuring web content", "Styling web pages"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "CSS is used for styling and layout of web pages",
+          "points": 10
+        },
+        {
+          "id": 32,
+          "question": "Which of the following is NOT a programming language?",
+          "options": ["Java", "HTML", "Python", "C++"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "HTML is a markup language, not a programming language",
+          "points": 10
+        },
+        {
+          "id": 33,
+          "question": "What is a 'variable' in programming?",
+          "options": ["A type of loop", "A container for storing data values", "A mathematical operator", "A fixed value"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "A variable is a named storage location for data",
+          "points": 10
+        },
+        {
+          "id": 34,
+          "question": "Which data structure operates on a Last-In, First-Out (LIFO) principle?",
+          "options": ["Queue", "Array", "Stack", "Linked List"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Stack follows LIFO (Last-In, First-Out) principle",
+          "points": 15
+        },
+        {
+          "id": 35,
+          "question": "What does 'API' stand for?",
+          "options": ["Application Protocol Interface", "Application Programming Interface", "Advanced Programming Instruction", "Automated Program Integration"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "API stands for Application Programming Interface",
+          "points": 15
+        },
+        {
+          "id": 36,
+          "question": "Which of these is used for version control in software development?",
+          "options": ["Adobe Photoshop", "Git", "Microsoft Excel", "Google Docs"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Git is a popular version control system",
+          "points": 10
+        },
+        {
+          "id": 37,
+          "question": "What is a 'bug' in programming?",
+          "options": ["A physical insect in the computer", "An error or defect in a program", "A type of software", "A user complaint"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "A bug is an error or flaw in a computer program",
+          "points": 10
+        },
+        {
+          "id": 38,
+          "question": "Which term refers to the process of finding and fixing errors in code?",
+          "options": ["Compiling", "Debugging", "Executing", "Syntax"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Debugging is the process of finding and fixing errors",
+          "points": 10
+        },
+        {
+          "id": 39,
+          "question": "What is the purpose of a 'for' loop?",
+          "options": ["To declare a new variable", "To execute a block of code a specific number of times", "To check a condition", "To define a function"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "For loop repeats a block of code a specific number of times",
+          "points": 10
+        },
+        {
+          "id": 40,
+          "question": "Which symbol is used for a single-line comment in Python?",
+          "options": ["//", "/* */", "#", "--"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "# is used for single-line comments in Python",
+          "points": 10
+        },
+        {
+          "id": 41,
+          "question": "What is a 'Boolean' data type?",
+          "options": ["A number with decimals", "A sequence of characters", "A value that can be true or false", "A whole number"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Boolean represents true or false values",
+          "points": 10
+        },
+        {
+          "id": 42,
+          "question": "Which term describes a reusable block of code designed to perform a specific task?",
+          "options": ["Variable", "Function", "Loop", "Class"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "A function is a reusable block of code",
+          "points": 10
+        },
+        {
+          "id": 43,
+          "question": "In JavaScript, what keyword is used to declare a variable that cannot be reassigned?",
+          "options": ["var", "let", "const", "static"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "const is used for constants that cannot be reassigned",
+          "points": 15
+        },
+        {
+          "id": 44,
+          "question": "What is the main purpose of a database?",
+          "options": ["To write code", "To store, manage, and retrieve data", "To design user interfaces", "To create network connections"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Databases are used to store and manage data",
+          "points": 10
+        },
+        {
+          "id": 45,
+          "question": "Which of these is an example of an algorithm?",
+          "options": ["A piece of software", "A set of step-by-step instructions to solve a problem", "A computer language", "A hardware component"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "An algorithm is a step-by-step procedure to solve a problem",
+          "points": 15
+        },
+        {
+          "id": 46,
+          "question": "What does 'HTTP' stand for?",
+          "options": ["Hyper Text Transfer Protocol", "High Technology Transfer Process", "Hyperlink and Text Protocol", "Home Text Transfer Protocol"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "HTTP stands for Hyper Text Transfer Protocol",
+          "points": 10
+        },
+        {
+          "id": 47,
+          "question": "Which language is primarily used for creating Android mobile apps?",
+          "options": ["C#", "Python", "Swift", "Kotlin/Java"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Kotlin and Java are primary languages for Android development",
+          "points": 15
+        },
+        {
+          "id": 48,
+          "question": "What is a 'compiler'?",
+          "options": ["A program that translates source code into machine code", "A tool for fixing bugs", "A web browser", "A type of database"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "A compiler translates high-level code to machine code",
+          "points": 15
+        },
+        {
+          "id": 49,
+          "question": "Which of the following is a key concept of Object-Oriented Programming (OOP)?",
+          "options": ["Procedural programming", "Structured programming", "Inheritance", "Linear programming"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Inheritance is a key OOP concept",
+          "points": 15
+        },
+        {
+          "id": 50,
+          "question": "What does a 'front-end' developer primarily work on?",
+          "options": ["Server logic and databases", "The user-facing part of a website", "Network security", "Operating systems"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Front-end developers work on client-side/user interface",
+          "points": 10
+        },
+        {
+          "id": 51,
+          "question": "What is the purpose of an 'if-else' statement?",
+          "options": ["To create a loop", "To make a decision based on a condition", "To declare a new function", "To store data"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "if-else statements make decisions based on conditions",
+          "points": 10
+        },
+        {
+          "id": 52,
+          "question": "In programming, what is an 'array'?",
+          "options": ["A single piece of data", "A sequence of numbers", "A collection of items of the same data type", "A type of bug"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "An array is a collection of similar data items",
+          "points": 10
+        },
+        {
+          "id": 53,
+          "question": "Which language is known as the 'mother of all languages'?",
+          "options": ["Java", "C", "Assembly", "Python"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "C is often called the mother of modern programming languages",
+          "points": 20
+        },
+        {
+          "id": 54,
+          "question": "What is the main benefit of using a 'class' in programming?",
+          "options": ["It simplifies loops", "It allows for code reusability and organization", "It makes code run faster", "It manages memory automatically"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Classes enable code reusability through inheritance and organization",
+          "points": 15
+        },
+        {
+          "id": 55,
+          "question": "What is an 'interpreter'?",
+          "options": ["A program that translates and executes code line by line", "A tool for managing versions", "A physical part of a computer", "A type of database"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "An interpreter executes code directly line by line",
+          "points": 15
+        },
+        {
+          "id": 56,
+          "question": "Which of these is a common framework for building websites with Python?",
+          "options": ["Ruby on Rails", "Angular", "Django", "Laravel"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Django is a popular Python web framework",
+          "points": 15
+        },
+        {
+          "id": 57,
+          "question": "What does SQL stand for?",
+          "options": ["Simple Query Language", "Structured Question Language", "Structured Query Language", "Sequential Query Language"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "SQL stands for Structured Query Language",
+          "points": 10
+        },
+        {
+          "id": 58,
+          "question": "Which of these is NOT a back-end programming language?",
+          "options": ["Node.js", "Python", "Java", "CSS"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "CSS is a styling language, not a back-end programming language",
+          "points": 10
+        },
+        {
+          "id": 59,
+          "question": "What is the main characteristic of a 'recursive' function?",
+          "options": ["It runs indefinitely", "It calls another function", "It calls itself", "It does not return a value"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "A recursive function calls itself to solve smaller instances of the same problem",
+          "points": 20
+        },
+        {
+          "id": 60,
+          "question": "Which term refers to the process of protecting information by transforming it into an unreadable format?",
+          "options": ["Compilation", "Debugging", "Encryption", "Abstraction"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Encryption converts data into unreadable format for security",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Artificial Intelligence",
+      "description": "AI and Machine Learning",
+      "icon": "🤖",
+      "questions": [
+        {
+          "id": 61,
+          "question": "What is the primary function of Machine Learning (ML)?",
+          "options": ["To perform complex mathematical calculations only", "To enable systems to learn from data without being explicitly programmed", "To replace human creativity entirely", "To manage cloud storage databases"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "ML enables systems to learn and improve from experience without explicit programming",
+          "points": 10
+        },
+        {
+          "id": 62,
+          "question": "Which term describes a machine that can only perform one specific, narrow task?",
+          "options": ["Artificial Super Intelligence (ASI)", "Artificial General Intelligence (AGI)", "Artificial Narrow Intelligence (ANI)", "Deep Learning"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "ANI is designed for specific tasks like playing chess or image recognition",
+          "points": 15
+        },
+        {
+          "id": 63,
+          "question": "If you train a model using a dataset where the answers are already provided, what type of learning is this?",
+          "options": ["Reinforcement Learning", "Unsupervised Learning", "Supervised Learning", "Clustering"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Supervised learning uses labeled datasets to train models",
+          "points": 15
+        },
+        {
+          "id": 64,
+          "question": "What does the acronym NLP stand for in AI?",
+          "options": ["Neural Logic Programming", "New Learning Principles", "Natural Language Processing", "Numeric Linear Project"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "NLP stands for Natural Language Processing",
+          "points": 10
+        },
+        {
+          "id": 65,
+          "question": "Which is the main programming language widely adopted for AI and ML?",
+          "options": ["Java", "C++", "Python", "HTML"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Python is the most popular language for AI/ML due to its extensive libraries",
+          "points": 10
+        },
+        {
+          "id": 66,
+          "question": "What is an 'Artificial Neural Network' designed to mimic?",
+          "options": ["The circulatory system", "The human brain structure", "The internet network topology", "A physical computing device"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Neural networks are inspired by the structure and function of the human brain",
+          "points": 15
+        },
+        {
+          "id": 67,
+          "question": "Which framework is a popular open-source library for deep learning developed by Google?",
+          "options": ["PyTorch", "Scikit-learn", "TensorFlow", "Django"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "TensorFlow was developed by Google for deep learning applications",
+          "points": 15
+        },
+        {
+          "id": 68,
+          "question": "Which sub-field of AI focuses on enabling machines to 'see' and interpret visual data?",
+          "options": ["Natural Language Processing", "Speech Recognition", "Computer Vision", "Robotics"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Computer Vision enables machines to interpret and understand visual information",
+          "points": 15
+        },
+        {
+          "id": 69,
+          "question": "What is 'Clustering' primarily used for?",
+          "options": ["Predicting a numerical value", "Training on labeled data", "Grouping similar data points together", "Rewarding an agent for correct actions"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Clustering groups similar data points without predefined labels",
+          "points": 15
+        },
+        {
+          "id": 70,
+          "question": "What is the primary concern with 'Bias' in AI?",
+          "options": ["The model runs too slowly", "The model cannot be integrated with other systems", "It leads to unfair or prejudiced outcomes for certain groups", "It requires too much data for training"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "AI bias can lead to unfair treatment of certain demographic groups",
+          "points": 15
+        },
+        {
+          "id": 71,
+          "question": "Which type of learning involves an agent interacting with an environment to maximize cumulative reward?",
+          "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Transfer Learning"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Reinforcement learning involves agents learning through trial and error with rewards",
+          "points": 20
+        },
+        {
+          "id": 72,
+          "question": "In a neural network, what is the role of an 'Activation Function'?",
+          "options": ["To calculate the final error rate", "To convert data into numerical format", "To introduce non-linearity into the model, allowing it to learn complex patterns", "To define the number of input features"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Activation functions introduce non-linearity, enabling neural networks to learn complex patterns",
+          "points": 20
+        },
+        {
+          "id": 73,
+          "question": "What is 'overfitting'?",
+          "options": ["The model is too simple to capture the data trend", "The model performs well on training data but poorly on unseen data", "The model is trained with too few features", "The process of reducing the number of variables in a dataset"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Overfitting occurs when a model learns training data too well but fails to generalize to new data",
+          "points": 15
+        },
+        {
+          "id": 74,
+          "question": "Which algorithm is used for dimensionality reduction to simplify models and reduce computation time?",
+          "options": ["K-Means", "Decision Tree", "Principal Component Analysis (PCA)", "Logistic Regression"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "PCA is a popular technique for dimensionality reduction",
+          "points": 20
+        },
+        {
+          "id": 75,
+          "question": "What is the core idea behind 'Generative AI'?",
+          "options": ["Labeling large datasets manually", "Creating new, realistic content (like images, text, or music)", "Improving the security of data encryption", "Optimizing website loading speed"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Generative AI creates new content rather than just analyzing existing data",
+          "points": 15
+        },
+        {
+          "id": 76,
+          "question": "Which component of an Artificial Neural Network takes the input and calculates a weighted sum?",
+          "options": ["The Loss Function", "The Hidden Layer neuron", "The Learning Rate", "The Dataset"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Neurons in hidden layers calculate weighted sums of inputs",
+          "points": 20
+        },
+        {
+          "id": 77,
+          "question": "What is the name of the iterative process used to adjust the weights of a neural network based on the error?",
+          "options": ["Forward Propagation", "Normalization", "Backpropagation", "Feature Engineering"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Backpropagation adjusts weights based on error gradients",
+          "points": 20
+        },
+        {
+          "id": 78,
+          "question": "Which algorithm is commonly used for recommendation systems by finding similarities between users or items?",
+          "options": ["Linear Regression", "K-Nearest Neighbors (KNN)", "Convolutional Neural Network (CNN)", "K-Means"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "KNN is often used in recommendation systems for finding similar users/items",
+          "points": 15
+        },
+        {
+          "id": 79,
+          "question": "What does 'tokenization' mean in the context of Natural Language Processing (NLP)?",
+          "options": ["Converting audio files to text", "Removing punctuation from text", "Breaking down text into smaller units like words or sub-words", "Generating new sentences based on input"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Tokenization splits text into smaller units (tokens) for processing",
+          "points": 15
+        },
+        {
+          "id": 80,
+          "question": "What is the key advantage of a 'Convolutional Layer' in a CNN for image processing?",
+          "options": ["It only processes text data", "It reduces the dimensionality of the image immediately", "It automatically learns and extracts spatial hierarchies of features (edges, textures, etc.)", "It always runs faster than any other layer"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Convolutional layers automatically learn hierarchical features from images",
+          "points": 20
+        },
+        {
+          "id": 81,
+          "question": "The process of using a pre-trained model on a new, related task is called:",
+          "options": ["Pruning", "Overfitting", "Transfer Learning", "Normalization"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Transfer learning leverages pre-trained models for new tasks",
+          "points": 15
+        },
+        {
+          "id": 82,
+          "question": "Which metric is generally used to evaluate a regression model's performance?",
+          "options": ["Accuracy", "Precision", "Mean Absolute Error (MAE)", "Recall"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "MAE and similar metrics are used for regression model evaluation",
+          "points": 15
+        },
+        {
+          "id": 83,
+          "question": "What is the goal of an 'Intelligent Agent' in AI?",
+          "options": ["To replace all human employees", "To perform only one pre-programmed task repeatedly", "To perceive its environment and take actions that maximize its chance of success", "To store and retrieve large amounts of data"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Intelligent agents perceive environments and act to achieve goals",
+          "points": 15
+        },
+        {
+          "id": 84,
+          "question": "What does 'Data Augmentation' involve, especially in Computer Vision?",
+          "options": ["Removing bad data points from the dataset", "Converting images to black and white only", "Creating new, modified samples from existing training data (e.g., rotating or flipping images) to expand the dataset", "The final step of model deployment"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Data augmentation creates variations of training data to improve model generalization",
+          "points": 15
+        },
+        {
+          "id": 85,
+          "question": "A 'Heuristic' in AI search algorithms is best described as:",
+          "options": ["A fixed, predetermined path to the goal", "A simple, non-optimal 'rule of thumb' or estimate that guides the search towards a solution", "The total time required to find the solution", "A mathematical formula for calculating weights"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Heuristics are rules of thumb that help guide search algorithms more efficiently",
+          "points": 20
+        },
+        {
+          "id": 86,
+          "question": "Which term refers to the parameter that controls the step size when adjusting the weights of a neural network during training?",
+          "options": ["Bias", "Epoch", "Learning Rate", "Accuracy"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Learning rate controls how much to change the model in response to estimated error",
+          "points": 15
+        },
+        {
+          "id": 87,
+          "question": "What is the primary function of a 'Loss Function' in training a model?",
+          "options": ["To randomly select features for the model", "To measure how well the model is performing compared to the expected output", "To preprocess the input data", "To visualize the model's output"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Loss function quantifies how well the model's predictions match the actual values",
+          "points": 15
+        },
+        {
+          "id": 88,
+          "question": "Which method is commonly used to prevent overfitting by randomly setting a fraction of neurons to zero during training?",
+          "options": ["Batch Normalization", "Pruning", "Dropout", "One-Hot Encoding"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Dropout randomly ignores neurons during training to prevent overfitting",
+          "points": 20
+        },
+        {
+          "id": 89,
+          "question": "In Supervised Learning, which task involves predicting a categorical label?",
+          "options": ["Regression", "Clustering", "Classification", "Dimensionality Reduction"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Classification predicts categorical labels, regression predicts continuous values",
+          "points": 15
+        },
+        {
+          "id": 90,
+          "question": "What is the primary function of a Recurrent Neural Network (RNN)?",
+          "options": ["To process unstructured numerical data", "To recognize objects in static images", "To process sequences of data, such as text or time series, where order matters", "To perform non-linear regression"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "RNNs are designed for sequential data where order and context matter",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mathematics",
+      "description": "Mathematics and Quantitative Aptitude",
+      "icon": "📐",
+      "questions": [
+        {
+          "id": 91,
+          "question": "What is the sum of all angles in a quadrilateral?",
+          "options": ["180°", "360°", "90°", "540°"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "The sum of all angles in a quadrilateral is always 360 degrees",
+          "points": 10
+        },
+        {
+          "id": 92,
+          "question": "What is the formula for the area of a rectangle?",
+          "options": ["2(length + width)", "length × width", "side²", "πr²"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Area of rectangle = length × width",
+          "points": 10
+        },
+        {
+          "id": 93,
+          "question": "What is the smallest prime number?",
+          "options": ["1", "2", "3", "0"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "2 is the smallest and only even prime number",
+          "points": 10
+        },
+        {
+          "id": 94,
+          "question": "What does the 'π' symbol represent in geometry?",
+          "options": ["The ratio of a circle's diameter to its radius", "The ratio of a circle's circumference to its diameter", "The area of a circle", "The radius of a circle"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "π is the ratio of circumference to diameter of a circle",
+          "points": 10
+        },
+        {
+          "id": 95,
+          "question": "According to Pythagoras' theorem, for a right-angled triangle, what is the relationship between its sides?",
+          "options": ["a + b = c", "a² + b² = c²", "a² + b² = 2c", "a + b = c²"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Pythagoras theorem: a² + b² = c² where c is the hypotenuse",
+          "points": 10
+        },
+        {
+          "id": 96,
+          "question": "A line that touches a circle at only one point is called a...?",
+          "options": ["Chord", "Tangent", "Radius", "Diameter"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "A tangent touches a circle at exactly one point",
+          "points": 10
+        },
+        {
+          "id": 97,
+          "question": "The median of a triangle connects a vertex to the midpoint of the...?",
+          "options": ["Opposite side", "Adjacent side", "Hypotenuse", "Angle"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Median connects a vertex to the midpoint of the opposite side",
+          "points": 15
+        },
+        {
+          "id": 98,
+          "question": "What is the value of 'tan(45°)'?",
+          "options": ["0", "0.5", "1", "√3"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "tan(45°) = 1",
+          "points": 15
+        },
+        {
+          "id": 99,
+          "question": "What is the formula for calculating Simple Interest (SI)?",
+          "options": ["P × R × T", "P + R + T", "P × R / T", "P + (R × T)"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Simple Interest = Principal × Rate × Time",
+          "points": 10
+        },
+        {
+          "id": 100,
+          "question": "A number that can be expressed in the form p/q, where p and q are integers and q ≠ 0, is called a...?",
+          "options": ["Irrational number", "Integer", "Rational number", "Real number"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Rational numbers can be expressed as fractions p/q",
+          "points": 10
+        },
+        {
+          "id": 101,
+          "question": "The sum of the cubes of the first 'n' natural numbers is given by the formula...?",
+          "options": ["n(n+1)/2", "[n(n+1)/2]²", "n²(n+1)²", "n³/3"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Sum of cubes = [n(n+1)/2]²",
+          "points": 20
+        },
+        {
+          "id": 102,
+          "question": "In algebra, what is a 'monomial'?",
+          "options": ["An expression with two terms", "An expression with a single term", "An expression with multiple variables", "A number without a variable"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "A monomial is an algebraic expression with only one term",
+          "points": 15
+        },
+        {
+          "id": 103,
+          "question": "The HCF of two prime numbers is always...?",
+          "options": ["1", "0", "The product of the numbers", "The sum of the numbers"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "HCF of two distinct prime numbers is always 1",
+          "points": 10
+        },
+        {
+          "id": 104,
+          "question": "A polygon with 8 sides is called a...?",
+          "options": ["Hexagon", "Heptagon", "Octagon", "Nonagon"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Octagon has 8 sides",
+          "points": 10
+        },
+        {
+          "id": 105,
+          "question": "What is the definition of a 'prime number'?",
+          "options": ["A number with exactly two factors: 1 and itself", "A number that can only be divided by 1", "Any odd number", "A number that is not divisible by 2"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Prime numbers have exactly two distinct factors: 1 and themselves",
+          "points": 10
+        },
+        {
+          "id": 106,
+          "question": "In a quadratic equation ax² + bx + c = 0, the discriminant is given by...?",
+          "options": ["b² - 4ac", "a² + b²", "4ac - b²", "-b / 2a"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Discriminant = b² - 4ac",
+          "points": 15
+        },
+        {
+          "id": 107,
+          "question": "What is the formula for the volume of a sphere?",
+          "options": ["πr²h", "4/3 πr³", "2πrh", "πr²"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Volume of sphere = 4/3 πr³",
+          "points": 15
+        },
+        {
+          "id": 108,
+          "question": "The product of two consecutive integers is always divisible by...?",
+          "options": ["3", "4", "2", "5"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Product of two consecutive integers is always even (divisible by 2)",
+          "points": 15
+        },
+        {
+          "id": 109,
+          "question": "The area of a triangle with a base 'b' and height 'h' is given by...?",
+          "options": ["b × h", "2(b + h)", "1/2 × b × h", "b + h / 2"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Area of triangle = 1/2 × base × height",
+          "points": 10
+        },
+        {
+          "id": 110,
+          "question": "What is the value of 5⁰?",
+          "options": ["0", "5", "1", "10"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Any non-zero number raised to power 0 equals 1",
+          "points": 10
+        },
+        {
+          "id": 111,
+          "question": "In trigonometry, 'sec θ' is the reciprocal of which function?",
+          "options": ["sin θ", "cos θ", "tan θ", "cot θ"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "sec θ = 1/cos θ",
+          "points": 15
+        },
+        {
+          "id": 112,
+          "question": "The set of all possible outcomes of an experiment is called the...?",
+          "options": ["Event", "Sample space", "Probability", "Outcome"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Sample space is the set of all possible outcomes",
+          "points": 10
+        },
+        {
+          "id": 113,
+          "question": "The formula for the circumference of a circle is...",
+          "options": ["πr²", "2πr", "πd", "π(d/2)"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Circumference = 2πr",
+          "points": 10
+        },
+        {
+          "id": 114,
+          "question": "What is the slope of a horizontal line?",
+          "options": ["Undefined", "1", "0", "Negative"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Horizontal lines have slope = 0",
+          "points": 10
+        },
+        {
+          "id": 115,
+          "question": "What is the volume of a cylinder with radius 'r' and height 'h'?",
+          "options": ["2πrh", "πr²h", "2πr(r+h)", "1/3πr²h"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Volume of cylinder = πr²h",
+          "points": 15
+        },
+        {
+          "id": 116,
+          "question": "What is the formula for the nth term of an arithmetic progression?",
+          "options": ["a + (n-1)d", "arⁿ⁻¹", "n/2[2a+(n-1)d]", "a - (n-1)d"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "nth term of AP = a + (n-1)d",
+          "points": 15
+        },
+        {
+          "id": 117,
+          "question": "Which of the following is an irrational number?",
+          "options": ["√4", "22/7", "0.333...", "π"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "π is an irrational number (cannot be expressed as a simple fraction)",
+          "points": 15
+        },
+        {
+          "id": 118,
+          "question": "The property (a + b) + c = a + (b + c) is called the...",
+          "options": ["Commutative Property", "Distributive Property", "Associative Property", "Identity Property"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Associative property: grouping doesn't affect the result",
+          "points": 10
+        },
+        {
+          "id": 119,
+          "question": "What is the mode of a set of data?",
+          "options": ["The middle value", "The sum of all values", "The most frequently occurring value", "The average value"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Mode is the value that appears most frequently",
+          "points": 10
+        },
+        {
+          "id": 120,
+          "question": "The perimeter of a circle is also known as its...?",
+          "options": ["Diameter", "Area", "Circumference", "Radius"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Circumference is the perimeter of a circle",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Science",
+      "description": "Science and Technology",
+      "icon": "🔬",
+      "questions": [
+        {
+          "id": 121,
+          "question": "What is the powerhouse of the cell?",
+          "options": ["Nucleus", "Ribosome", "Mitochondria", "Cytoplasm"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Mitochondria is known as the powerhouse of the cell",
+          "points": 10
+        },
+        {
+          "id": 122,
+          "question": "What is the chemical symbol for gold?",
+          "options": ["Ag", "Au", "Pb", "Fe"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Au is the chemical symbol for gold (from Latin 'Aurum')",
+          "points": 10
+        },
+        {
+          "id": 123,
+          "question": "Which gas do plants absorb during photosynthesis?",
+          "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Plants absorb CO₂ during photosynthesis",
+          "points": 10
+        },
+        {
+          "id": 124,
+          "question": "The chemical formula for water is:",
+          "options": ["H₃O", "H₂O₂", "H₂O", "CO₂"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "H₂O is the chemical formula for water",
+          "points": 10
+        },
+        {
+          "id": 125,
+          "question": "What is the study of the universe and celestial objects called?",
+          "options": ["Geology", "Meteorology", "Cosmology", "Oceanography"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Cosmology is the study of the origin and evolution of the universe",
+          "points": 15
+        },
+        {
+          "id": 126,
+          "question": "Which of these is a good conductor of electricity?",
+          "options": ["Wood", "Plastic", "Copper", "Glass"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Copper is an excellent conductor of electricity",
+          "points": 10
+        },
+        {
+          "id": 127,
+          "question": "What is the process by which a solid turns directly into a gas without passing through the liquid state?",
+          "options": ["Evaporation", "Condensation", "Sublimation", "Melting"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Sublimation is the direct transition from solid to gas",
+          "points": 15
+        },
+        {
+          "id": 128,
+          "question": "Which planet is known as the 'Red Planet'?",
+          "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Mars is called the Red Planet due to its reddish appearance",
+          "points": 10
+        },
+        {
+          "id": 129,
+          "question": "What is the unit of electric current?",
+          "options": ["Volt", "Ohm", "Watt", "Ampere"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "Ampere is the unit of electric current",
+          "points": 10
+        },
+        {
+          "id": 130,
+          "question": "What is the main component of natural gas?",
+          "options": ["Propane", "Butane", "Methane", "Ethane"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Methane is the primary component of natural gas",
+          "points": 15
+        },
+        {
+          "id": 131,
+          "question": "What is the process of a liquid becoming a solid?",
+          "options": ["Melting", "Evaporation", "Freezing", "Condensation"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Freezing is the phase change from liquid to solid",
+          "points": 10
+        },
+        {
+          "id": 132,
+          "question": "Which of these is an example of a chemical change?",
+          "options": ["Melting of ice", "Boiling of water", "Burning of wood", "Cutting of paper"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Burning wood involves chemical reactions creating new substances",
+          "points": 10
+        },
+        {
+          "id": 133,
+          "question": "What is the scientific study of plants called?",
+          "options": ["Zoology", "Geology", "Botany", "Anatomy"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Botany is the study of plants",
+          "points": 10
+        },
+        {
+          "id": 134,
+          "question": "Which of these is the largest planet in our solar system?",
+          "options": ["Saturn", "Earth", "Uranus", "Jupiter"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "Jupiter is the largest planet in our solar system",
+          "points": 10
+        },
+        {
+          "id": 135,
+          "question": "What is the main function of red blood cells?",
+          "options": ["Fighting infection", "Transporting oxygen", "Clotting blood", "Filtering waste"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Red blood cells carry oxygen throughout the body",
+          "points": 10
+        },
+        {
+          "id": 136,
+          "question": "Which of the following is a renewable source of energy?",
+          "options": ["Coal", "Petroleum", "Solar power", "Natural gas"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Solar power is a renewable energy source",
+          "points": 10
+        },
+        {
+          "id": 137,
+          "question": "What is the process of splitting a large atom's nucleus into smaller atoms?",
+          "options": ["Nuclear fusion", "Nuclear fission", "Radioactive decay", "Chemical reaction"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Nuclear fission splits large atomic nuclei into smaller ones",
+          "points": 15
+        },
+        {
+          "id": 138,
+          "question": "Which part of the human body produces insulin?",
+          "options": ["Liver", "Stomach", "Pancreas", "Kidney"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Pancreas produces insulin to regulate blood sugar",
+          "points": 15
+        },
+        {
+          "id": 139,
+          "question": "What is the hardest natural substance on Earth?",
+          "options": ["Granite", "Iron", "Diamond", "Quartz"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Diamond is the hardest known natural material",
+          "points": 10
+        },
+        {
+          "id": 140,
+          "question": "Which of these is a vector quantity?",
+          "options": ["Mass", "Speed", "Distance", "Velocity"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Velocity has both magnitude and direction (vector quantity)",
+          "points": 15
+        },
+        {
+          "id": 141,
+          "question": "Which layer of the atmosphere is closest to Earth's surface?",
+          "options": ["Mesosphere", "Stratosphere", "Exosphere", "Troposphere"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Troposphere is the lowest layer of Earth's atmosphere",
+          "points": 15
+        },
+        {
+          "id": 142,
+          "question": "What is the common name for sodium chloride?",
+          "options": ["Baking soda", "Vinegar", "Table salt", "Sugar"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sodium chloride is commonly known as table salt",
+          "points": 10
+        },
+        {
+          "id": 143,
+          "question": "Which organ in the human body is responsible for filtering blood?",
+          "options": ["Heart", "Lungs", "Kidneys", "Stomach"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Kidneys filter waste products from blood",
+          "points": 10
+        },
+        {
+          "id": 144,
+          "question": "What is the process of breaking down food into smaller molecules called?",
+          "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Digestion breaks down food into absorbable molecules",
+          "points": 10
+        },
+        {
+          "id": 145,
+          "question": "Which of these is a vertebrate?",
+          "options": ["Jellyfish", "Earthworm", "Frog", "Snail"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Frogs are vertebrates (have backbone)",
+          "points": 10
+        },
+        {
+          "id": 146,
+          "question": "What is the SI unit for temperature?",
+          "options": ["Celsius", "Fahrenheit", "Joule", "Kelvin"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Kelvin is the SI base unit for temperature",
+          "points": 15
+        },
+        {
+          "id": 147,
+          "question": "Which layer of the Earth is responsible for generating its magnetic field?",
+          "options": ["Crust", "Mantle", "Inner core", "Outer core"],
+          "correctAnswer": 3,
+          "difficulty": "hard",
+          "explanation": "Earth's magnetic field is generated by the outer core",
+          "points": 20
+        },
+        {
+          "id": 148,
+          "question": "What is the function of chlorophyll in plants?",
+          "options": ["Absorbing water from the soil", "Providing structural support", "Producing oxygen", "Absorbing sunlight for photosynthesis"],
+          "correctAnswer": 3,
+          "difficulty": "medium",
+          "explanation": "Chlorophyll absorbs sunlight energy for photosynthesis",
+          "points": 15
+        },
+        {
+          "id": 149,
+          "question": "What is the force that pulls objects toward the center of the Earth?",
+          "options": ["Friction", "Tension", "Gravity", "Magnetism"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Gravity pulls objects toward Earth's center",
+          "points": 10
+        },
+        {
+          "id": 150,
+          "question": "Which human organ is primarily responsible for pumping blood throughout the body?",
+          "options": ["Brain", "Lungs", "Heart", "Liver"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Heart pumps blood throughout the circulatory system",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "History",
+      "description": "Historical Events and Figures",
+      "icon": "📜",
+      "questions": [
+        {
+          "id": 151,
+          "question": "The Indus Valley Civilization is also known as which civilization?",
+          "options": ["Vedic", "Harappan", "Mohenjo-Daro", "Mauryan"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Indus Valley Civilization is also called Harappan Civilization",
+          "points": 15
+        },
+        {
+          "id": 152,
+          "question": "Who was the founder of the Mauryan Empire?",
+          "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Samudragupta"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Chandragupta Maurya founded the Mauryan Empire",
+          "points": 15
+        },
+        {
+          "id": 153,
+          "question": "The famous 'Iron Pillar' which has not rusted despite being exposed to weather for centuries is located in which city?",
+          "options": ["Mumbai", "Delhi", "Kolkata", "Agra"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Iron Pillar of Delhi is famous for its rust-resistant composition",
+          "points": 20
+        },
+        {
+          "id": 154,
+          "question": "Who was the first governor-general of independent India?",
+          "options": ["Lord Mountbatten", "C. Rajagopalachari", "Jawaharlal Nehru", "Dr. Rajendra Prasad"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "C. Rajagopalachari was the first Indian Governor-General of independent India",
+          "points": 20
+        },
+        {
+          "id": 155,
+          "question": "The Jallianwala Bagh massacre took place in which year?",
+          "options": ["1918", "1919", "1920", "1921"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Jallianwala Bagh massacre occurred on April 13, 1919",
+          "points": 15
+        },
+        {
+          "id": 156,
+          "question": "Which Indian freedom fighter is known as 'Netaji'?",
+          "options": ["Bhagat Singh", "Subhas Chandra Bose", "Mahatma Gandhi", "Sardar Vallabhbhai Patel"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Subhas Chandra Bose is affectionately called Netaji",
+          "points": 10
+        },
+        {
+          "id": 157,
+          "question": "The 'Dandi March' was led by which freedom fighter?",
+          "options": ["Subhas Chandra Bose", "Mahatma Gandhi", "Bhagat Singh", "Sardar Vallabhbhai Patel"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Mahatma Gandhi led the Dandi March (Salt Satyagraha) in 1930",
+          "points": 10
+        },
+        {
+          "id": 158,
+          "question": "The ancient city of Pataliputra is the modern-day city of...?",
+          "options": ["Patna", "Lucknow", "Varanasi", "Ujjain"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Pataliputra is modern-day Patna, Bihar",
+          "points": 15
+        },
+        {
+          "id": 159,
+          "question": "Who founded the 'Satyashodhak Samaj' in Maharashtra?",
+          "options": ["B. R. Ambedkar", "Jyotirao Phule", "Gopal Krishna Gokhale", "Mahatma Gandhi"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Jyotirao Phule founded Satyashodhak Samaj for social reform",
+          "points": 20
+        },
+        {
+          "id": 160,
+          "question": "The 'First War of Indian Independence' in 1857 is also known as the...",
+          "options": ["Sepoy Mutiny", "Quit India Movement", "Civil Disobedience Movement", "Non-Cooperation Movement"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "1857 revolt is also called Sepoy Mutiny or First War of Independence",
+          "points": 15
+        },
+        {
+          "id": 161,
+          "question": "Which dynasty built the Khajuraho temples?",
+          "options": ["Gupta", "Chola", "Chandela", "Rashtrakuta"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Chandela dynasty built the famous Khajuraho temples",
+          "points": 20
+        },
+        {
+          "id": 162,
+          "question": "The 'Rigveda' is the oldest text of which religious tradition?",
+          "options": ["Buddhism", "Hinduism", "Jainism", "Sikhism"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Rigveda is the oldest of the four Vedas in Hinduism",
+          "points": 15
+        },
+        {
+          "id": 163,
+          "question": "Who was the first woman President of the Indian National Congress?",
+          "options": ["Sarojini Naidu", "Annie Besant", "Indira Gandhi", "Vijayalakshmi Pandit"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Annie Besant was the first woman President of INC in 1917",
+          "points": 20
+        },
+        {
+          "id": 164,
+          "question": "The 'Battle of Plassey' was fought in which year?",
+          "options": ["1757", "1764", "1773", "1857"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Battle of Plassey was fought in 1757",
+          "points": 15
+        },
+        {
+          "id": 165,
+          "question": "Who founded the 'Gadar Party' in the US and Canada?",
+          "options": ["Lala Lajpat Rai", "Lala Har Dayal", "Ras Bihari Bose", "Sohan Singh Bhakna"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Lala Har Dayal was a key founder of the Gadar Party",
+          "points": 20
+        },
+        {
+          "id": 166,
+          "question": "The 'Sangam period' in ancient India is associated with which region?",
+          "options": ["North India", "Deccan", "South India", "East India"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Sangam period is associated with ancient Tamilakam (South India)",
+          "points": 20
+        },
+        {
+          "id": 167,
+          "question": "Who was the first Indian to join the Indian Civil Service (ICS)?",
+          "options": ["Surendranath Banerjee", "Satyendranath Tagore", "Aurobindo Ghosh", "Dadabhai Naoroji"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Satyendranath Tagore was the first Indian ICS officer in 1863",
+          "points": 20
+        },
+        {
+          "id": 168,
+          "question": "The 'Permanent Settlement' was introduced by which British Governor-General?",
+          "options": ["Lord Wellesley", "Lord Cornwallis", "Lord Dalhousie", "William Bentinck"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Lord Cornwallis introduced Permanent Settlement in 1793",
+          "points": 20
+        },
+        {
+          "id": 169,
+          "question": "The ancient university of Nalanda was in which modern Indian state?",
+          "options": ["West Bengal", "Uttar Pradesh", "Bihar", "Odisha"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Nalanda University was in modern-day Bihar",
+          "points": 15
+        },
+        {
+          "id": 170,
+          "question": "Who was the founder of the 'Forward Bloc' political party?",
+          "options": ["Jawaharlal Nehru", "Subhas Chandra Bose", "Sardar Vallabhbhai Patel", "Maulana Azad"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Subhas Chandra Bose founded Forward Bloc in 1939",
+          "points": 15
+        },
+        {
+          "id": 171,
+          "question": "The 'Battle of Buxar' was fought in which year?",
+          "options": ["1757", "1764", "1857", "1773"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Battle of Buxar was fought in 1764",
+          "points": 15
+        },
+        {
+          "id": 172,
+          "question": "Which Indian leader is known as the 'Iron Man of India'?",
+          "options": ["Lal Bahadur Shastri", "Sardar Vallabhbhai Patel", "B. R. Ambedkar", "Subhas Chandra Bose"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Sardar Vallabhbhai Patel is called the Iron Man of India",
+          "points": 10
+        },
+        {
+          "id": 173,
+          "question": "The 'Rigvedic' period is known for which system of governance?",
+          "options": ["Monarchy", "Republic", "Tribal chiefdoms", "Democracy"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Rigvedic period had tribal chiefdoms (jana) as political units",
+          "points": 20
+        },
+        {
+          "id": 174,
+          "question": "Who was the first President of the Indian National Congress?",
+          "options": ["A. O. Hume", "W. C. Bonnerjee", "Dadabhai Naoroji", "Badruddin Tyabji"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Womesh Chunder Bonnerjee was the first INC President in 1885",
+          "points": 20
+        },
+        {
+          "id": 175,
+          "question": "Which ancient Indian ruler converted to Buddhism after the Kalinga War?",
+          "options": ["Chandragupta Maurya", "Bindusara", "Ashoka", "Kanishka"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Ashoka embraced Buddhism after the devastating Kalinga War",
+          "points": 15
+        },
+        {
+          "id": 176,
+          "question": "The 'Sati Pratha' was abolished by which British Governor-General?",
+          "options": ["Lord Dalhousie", "Lord William Bentinck", "Lord Canning", "Lord Ripon"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Lord William Bentinck abolished Sati in 1829",
+          "points": 15
+        },
+        {
+          "id": 177,
+          "question": "The 'Harshacharita' was written by which court poet of King Harsha?",
+          "options": ["Kalidasa", "Banabhatta", "Fa Xian", "Xuanzang"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Banabhatta wrote Harshacharita, biography of King Harsha",
+          "points": 20
+        },
+        {
+          "id": 178,
+          "question": "The 'Cripps Mission' came to India in which year?",
+          "options": ["1940", "1942", "1945", "1946"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Cripps Mission arrived in India in 1942",
+          "points": 20
+        },
+        {
+          "id": 179,
+          "question": "The 'Partition of Bengal' was carried out by which Viceroy of India?",
+          "options": ["Lord Minto", "Lord Curzon", "Lord Hardinge", "Lord Chelmsford"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Lord Curzon partitioned Bengal in 1905",
+          "points": 15
+        },
+        {
+          "id": 180,
+          "question": "The famous poet Tulsidas, who wrote the Ramcharitmanas, lived during the reign of which Mughal Emperor?",
+          "options": ["Humayun", "Akbar", "Shah Jahan", "Jahangir"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Tulsidas lived during Akbar's reign (1556-1605)",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Geography",
+      "description": "World Geography and Indian Geography",
+      "icon": "🗺️",
+      "questions": [
+        {
+          "id": 181,
+          "question": "Which is the largest ocean on Earth?",
+          "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "Pacific Ocean is the largest and deepest ocean",
+          "points": 10
+        },
+        {
+          "id": 182,
+          "question": "Which of these is the largest continent by land area?",
+          "options": ["Africa", "North America", "Asia", "Europe"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Asia is the largest continent by area",
+          "points": 10
+        },
+        {
+          "id": 183,
+          "question": "What is the capital of Japan?",
+          "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Tokyo is the capital of Japan",
+          "points": 10
+        },
+        {
+          "id": 184,
+          "question": "The 'Sahara Desert' is located on which continent?",
+          "options": ["Asia", "North America", "Africa", "Australia"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sahara Desert is in Northern Africa",
+          "points": 10
+        },
+        {
+          "id": 185,
+          "question": "Which river is the longest in the world?",
+          "options": ["Amazon", "Ganga", "Nile", "Yangtze"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Nile River is traditionally considered the longest river",
+          "points": 15
+        },
+        {
+          "id": 186,
+          "question": "What is the name of the largest island in the world?",
+          "options": ["Madagascar", "Greenland", "Australia", "Borneo"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Greenland is the world's largest island",
+          "points": 15
+        },
+        {
+          "id": 187,
+          "question": "Mount Everest, the world's highest peak, is located in which mountain range?",
+          "options": ["Andes", "Rocky Mountains", "Himalayas", "Alps"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Mount Everest is in the Himalayas",
+          "points": 10
+        },
+        {
+          "id": 188,
+          "question": "Which country is also known as the 'Land of the Rising Sun'?",
+          "options": ["China", "India", "Japan", "Thailand"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Japan is called the Land of the Rising Sun",
+          "points": 10
+        },
+        {
+          "id": 189,
+          "question": "The 'Strait of Gibraltar' separates which two continents?",
+          "options": ["Asia and Africa", "North America and South America", "Europe and Africa", "Asia and Europe"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Strait of Gibraltar separates Europe (Spain) from Africa (Morocco)",
+          "points": 15
+        },
+        {
+          "id": 190,
+          "question": "Which of these is the world's largest hot desert?",
+          "options": ["Gobi Desert", "Kalahari Desert", "Sahara Desert", "Arabian Desert"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sahara is the largest hot desert in the world",
+          "points": 10
+        },
+        {
+          "id": 191,
+          "question": "Which country is the world's largest producer of coffee?",
+          "options": ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Brazil is the largest coffee producer globally",
+          "points": 15
+        },
+        {
+          "id": 192,
+          "question": "The 'Great Barrier Reef' is located off the coast of which country?",
+          "options": ["Indonesia", "Australia", "Philippines", "Fiji"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Great Barrier Reef is off Australia's northeast coast",
+          "points": 15
+        },
+        {
+          "id": 193,
+          "question": "Which is the smallest continent by land area?",
+          "options": ["Europe", "Australia", "Antarctica", "South America"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Australia is the smallest continent",
+          "points": 10
+        },
+        {
+          "id": 194,
+          "question": "The 'Amazon Rainforest' is primarily located in which country?",
+          "options": ["Peru", "Colombia", "Brazil", "Venezuela"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Most of Amazon rainforest is in Brazil",
+          "points": 15
+        },
+        {
+          "id": 195,
+          "question": "Which of these lines of latitude is also known as the 'Equator'?",
+          "options": ["0°", "23.5° N", "23.5° S", "90° N"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Equator is at 0° latitude",
+          "points": 10
+        },
+        {
+          "id": 196,
+          "question": "The 'Andes Mountains' are located on which continent?",
+          "options": ["Asia", "North America", "South America", "Europe"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Andes Mountains run along South America's western coast",
+          "points": 15
+        },
+        {
+          "id": 197,
+          "question": "Which is the largest lake in India?",
+          "options": ["Dal Lake", "Wular Lake", "Chilika Lake", "Sambhar Lake"],
+          "correctAnswer": 1,
+          "difficulty": "hard",
+          "explanation": "Wular Lake in Jammu & Kashmir is India's largest freshwater lake",
+          "points": 20
+        },
+        {
+          "id": 198,
+          "question": "The 'Chota Nagpur Plateau' is a prominent feature in which part of India?",
+          "options": ["North India", "South India", "East India", "West India"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Chota Nagpur Plateau is in eastern India (Jharkhand, Bihar, Odisha)",
+          "points": 15
+        },
+        {
+          "id": 199,
+          "question": "Which of the following is an artificial lake in India?",
+          "options": ["Dal Lake", "Wular Lake", "Sukhna Lake", "Chilika Lake"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Sukhna Lake in Chandigarh is an artificial lake",
+          "points": 20
+        },
+        {
+          "id": 200,
+          "question": "Which Indian state is known as the 'Spice Garden of India'?",
+          "options": ["Karnataka", "Kerala", "Assam", "Tamil Nadu"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Kerala is known as the Spice Garden of India",
+          "points": 15
+        },
+        {
+          "id": 201,
+          "question": "The 'Gir Forest' in Gujarat is the only natural habitat for which animal in India?",
+          "options": ["Bengal Tiger", "Asiatic Lion", "Indian Elephant", "One-horned Rhino"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Gir Forest is the only home of Asiatic Lions",
+          "points": 15
+        },
+        {
+          "id": 202,
+          "question": "Which city is the capital of Australia?",
+          "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Canberra is the capital of Australia",
+          "points": 15
+        },
+        {
+          "id": 203,
+          "question": "The 'Suez Canal' connects which two bodies of water?",
+          "options": ["Mediterranean Sea and Atlantic Ocean", "Red Sea and Indian Ocean", "Mediterranean Sea and Red Sea", "Black Sea and Caspian Sea"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Suez Canal connects Mediterranean Sea and Red Sea",
+          "points": 15
+        },
+        {
+          "id": 204,
+          "question": "Which country is the largest in the world by land area?",
+          "options": ["Canada", "China", "Russia", "United States"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Russia is the largest country by land area",
+          "points": 10
+        },
+        {
+          "id": 205,
+          "question": "The 'Great Victoria Desert' is located in which country?",
+          "options": ["Brazil", "Argentina", "Australia", "South Africa"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Great Victoria Desert is in Australia",
+          "points": 20
+        },
+        {
+          "id": 206,
+          "question": "Which of these is a major river flowing through China?",
+          "options": ["Nile", "Amazon", "Yangtze", "Volga"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Yangtze River flows through China",
+          "points": 15
+        },
+        {
+          "id": 207,
+          "question": "The 'Deccan Plateau' is a prominent geographical feature in which country?",
+          "options": ["Pakistan", "India", "Nepal", "Bangladesh"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Deccan Plateau covers much of southern India",
+          "points": 10
+        },
+        {
+          "id": 208,
+          "question": "What is the capital of Canada?",
+          "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Ottawa is the capital of Canada",
+          "points": 15
+        },
+        {
+          "id": 209,
+          "question": "The 'Palk Strait' separates India from which country?",
+          "options": ["Pakistan", "Bangladesh", "Sri Lanka", "Maldives"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Palk Strait separates India from Sri Lanka",
+          "points": 15
+        },
+        {
+          "id": 210,
+          "question": "The deepest point in the world's oceans, the Mariana Trench, is located in which ocean?",
+          "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Mariana Trench is in the Pacific Ocean",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Sports",
+      "description": "Sports and Athletics",
+      "icon": "⚽",
+      "questions": [
+        {
+          "id": 211,
+          "question": "How many players are on a standard basketball team on the court at one time?",
+          "options": ["6", "5", "7", "11"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Basketball teams have 5 players on court",
+          "points": 10
+        },
+        {
+          "id": 212,
+          "question": "In which sport would you use a shuttlecock?",
+          "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Shuttlecock is used in badminton",
+          "points": 10
+        },
+        {
+          "id": 213,
+          "question": "What is the national sport of India?",
+          "options": ["Cricket", "Hockey", "Football", "Kabaddi"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Hockey is the national sport of India",
+          "points": 10
+        },
+        {
+          "id": 214,
+          "question": "How many players are in a cricket team on the field at one time?",
+          "options": ["9", "10", "11", "12"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Cricket teams have 11 players",
+          "points": 10
+        },
+        {
+          "id": 215,
+          "question": "The term 'hat-trick' is commonly used in which sport?",
+          "options": ["Basketball", "Football (Soccer)", "Golf", "Tennis"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Hat-trick originally from cricket, now used in football for 3 goals",
+          "points": 10
+        },
+        {
+          "id": 216,
+          "question": "Who is known as the 'God of Cricket'?",
+          "options": ["MS Dhoni", "Virat Kohli", "Sachin Tendulkar", "Rohit Sharma"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sachin Tendulkar is called the God of Cricket",
+          "points": 10
+        },
+        {
+          "id": 217,
+          "question": "The 'Dronacharya Award' is given for excellence in which field?",
+          "options": ["Coaching", "Playing", "Administration", "Commentary"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Dronacharya Award is for outstanding coaches",
+          "points": 15
+        },
+        {
+          "id": 218,
+          "question": "Which country won the first-ever Cricket World Cup in 1975?",
+          "options": ["India", "Australia", "West Indies", "England"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "West Indies won the first Cricket World Cup in 1975",
+          "points": 15
+        },
+        {
+          "id": 219,
+          "question": "The term 'smash' is associated with which sport?",
+          "options": ["Cricket", "Tennis", "Football", "Swimming"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Smash is a powerful overhead shot in tennis and badminton",
+          "points": 10
+        },
+        {
+          "id": 220,
+          "question": "Which country hosted the 2016 Summer Olympics?",
+          "options": ["UK", "China", "Brazil", "USA"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "2016 Summer Olympics were held in Rio de Janeiro, Brazil",
+          "points": 10
+        },
+        {
+          "id": 221,
+          "question": "In which sport would you find a 'gully' and a 'silly point'?",
+          "options": ["Baseball", "Cricket", "Hockey", "Golf"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Gully and silly point are fielding positions in cricket",
+          "points": 15
+        },
+        {
+          "id": 222,
+          "question": "What is the standard length of a marathon race in kilometers?",
+          "options": ["21.1 km", "42.195 km", "50 km", "40 km"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Marathon distance is 42.195 km (26.2 miles)",
+          "points": 15
+        },
+        {
+          "id": 223,
+          "question": "Which country won the FIFA World Cup in 2022?",
+          "options": ["France", "Argentina", "Germany", "Brazil"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Argentina won the 2022 FIFA World Cup",
+          "points": 10
+        },
+        {
+          "id": 224,
+          "question": "How many holes are there in a standard game of golf?",
+          "options": ["9", "12", "18", "20"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Standard golf courses have 18 holes",
+          "points": 10
+        },
+        {
+          "id": 225,
+          "question": "The 'Ryder Cup' is a famous tournament in which sport?",
+          "options": ["Tennis", "Golf", "Basketball", "Hockey"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Ryder Cup is a prestigious golf tournament between US and Europe",
+          "points": 15
+        },
+        {
+          "id": 226,
+          "question": "What is the full form of 'IPL' in cricket?",
+          "options": ["International Premier League", "Indian Premier League", "India's Premier League", "Indian Professional League"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "IPL stands for Indian Premier League",
+          "points": 10
+        },
+        {
+          "id": 227,
+          "question": "The term 'backstroke' is associated with which sport?",
+          "options": ["Gymnastics", "Swimming", "Athletics", "Rowing"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Backstroke is a swimming style",
+          "points": 10
+        },
+        {
+          "id": 228,
+          "question": "Who is the first Indian woman to win an Olympic medal?",
+          "options": ["Saina Nehwal", "Mary Kom", "Karnam Malleswari", "P.V. Sindhu"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Karnam Malleswari won bronze in weightlifting (2000 Sydney)",
+          "points": 15
+        },
+        {
+          "id": 229,
+          "question": "In which sport do you score a 'try'?",
+          "options": ["Rugby", "American Football", "Cricket", "Baseball"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Try is a way of scoring points in rugby",
+          "points": 15
+        },
+        {
+          "id": 230,
+          "question": "Which country is the birthplace of the sport 'Judo'?",
+          "options": ["China", "South Korea", "Japan", "India"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Judo originated in Japan",
+          "points": 15
+        },
+        {
+          "id": 231,
+          "question": "The 'Wankhede Stadium' is located in which Indian city?",
+          "options": ["Kolkata", "Delhi", "Mumbai", "Chennai"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Wankhede Stadium is in Mumbai",
+          "points": 10
+        },
+        {
+          "id": 232,
+          "question": "What is the maximum number of times a single team can hit the ball in volleyball before it must cross the net?",
+          "options": ["2", "3", "4", "5"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Volleyball teams get maximum 3 touches before sending ball over net",
+          "points": 15
+        },
+        {
+          "id": 233,
+          "question": "In which sport would you perform a 'dunk'?",
+          "options": ["Volleyball", "Basketball", "Football", "Handball"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Dunk is a basketball move where player jumps and scores through hoop",
+          "points": 10
+        },
+        {
+          "id": 234,
+          "question": "Which famous athlete is known as 'The Flying Sikh'?",
+          "options": ["Milkha Singh", "Dhyan Chand", "P.T. Usha", "Paavo Nurmi"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Milkha Singh is called The Flying Sikh",
+          "points": 15
+        },
+        {
+          "id": 235,
+          "question": "The term 'checkmate' is used in which game?",
+          "options": ["Carrom", "Chess", "Ludo", "Snooker"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Checkmate is the winning move in chess",
+          "points": 10
+        },
+        {
+          "id": 236,
+          "question": "Which of these is a term used in wrestling?",
+          "options": ["Lob", "Pin", "Free throw", "Stump"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Pin is a wrestling move to hold opponent's shoulders to mat",
+          "points": 15
+        },
+        {
+          "id": 237,
+          "question": "The 'Oval' cricket ground is located in which city?",
+          "options": ["Sydney", "London", "Melbourne", "Mumbai"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "The Oval is in London, England",
+          "points": 15
+        },
+        {
+          "id": 238,
+          "question": "Who is the first Indian to win a gold medal at the Olympics for an individual event?",
+          "options": ["Major Dhyan Chand", "Abhinav Bindra", "Neeraj Chopra", "Sushil Kumar"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Abhinav Bindra won gold in 10m air rifle (2008 Beijing)",
+          "points": 15
+        },
+        {
+          "id": 239,
+          "question": "Which Indian city is home to the 'Eden Gardens' cricket stadium?",
+          "options": ["Mumbai", "Chennai", "Kolkata", "Delhi"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Eden Gardens is in Kolkata",
+          "points": 10
+        },
+        {
+          "id": 240,
+          "question": "The Olympic rings represent how many continents?",
+          "options": ["4", "5", "6", "7"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Five rings represent five inhabited continents",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "General Knowledge",
+      "description": "General Knowledge Questions",
+      "icon": "🧠",
+      "questions": [
+        {
+          "id": 241,
+          "question": "Which is the largest animal in the world?",
+          "options": ["Shark", "Blue Whale", "Elephant", "Giraffe"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Blue Whale is the largest animal ever known",
+          "points": 10
+        },
+        {
+          "id": 242,
+          "question": "Which is the smallest continent in the world?",
+          "options": ["Asia", "Australia", "Africa", "Europe"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Australia is the smallest continent",
+          "points": 10
+        },
+        {
+          "id": 243,
+          "question": "Which is the fastest animal in the world?",
+          "options": ["Tiger", "Cheetah", "Lion", "Leopard"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Cheetah is the fastest land animal",
+          "points": 10
+        },
+        {
+          "id": 244,
+          "question": "Which is the largest continent in the world?",
+          "options": ["Asia", "Africa", "North America", "Australia"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Asia is the largest continent",
+          "points": 10
+        },
+        {
+          "id": 245,
+          "question": "Which is the longest river in the world?",
+          "options": ["Nile", "Amazon", "Ganga", "Yangtze"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Nile River is the longest river",
+          "points": 10
+        },
+        {
+          "id": 246,
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Mars is called the Red Planet",
+          "points": 10
+        },
+        {
+          "id": 247,
+          "question": "Which is the largest ocean in the world?",
+          "options": ["Indian Ocean", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Pacific Ocean is the largest ocean",
+          "points": 10
+        },
+        {
+          "id": 248,
+          "question": "Which country is called the Land of Rising Sun?",
+          "options": ["India", "Japan", "China", "Thailand"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Japan is called Land of Rising Sun",
+          "points": 10
+        },
+        {
+          "id": 249,
+          "question": "Which gas do plants release during photosynthesis?",
+          "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Plants release oxygen during photosynthesis",
+          "points": 10
+        },
+        {
+          "id": 250,
+          "question": "Which is the tallest mountain in the world?",
+          "options": ["Mount Everest", "K2", "Kangchenjunga", "Mount Fuji"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Mount Everest is the highest mountain",
+          "points": 10
+        },
+        {
+          "id": 251,
+          "question": "Which is the national bird of India?",
+          "options": ["Sparrow", "Peacock", "Parrot", "Crow"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Peacock is India's national bird",
+          "points": 10
+        },
+        {
+          "id": 252,
+          "question": "Which is the coldest planet in our solar system?",
+          "options": ["Neptune", "Uranus", "Pluto", "Saturn"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "Neptune is the coldest planet",
+          "points": 15
+        },
+        {
+          "id": 253,
+          "question": "Which is the national animal of India?",
+          "options": ["Elephant", "Tiger", "Lion", "Leopard"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Tiger is India's national animal",
+          "points": 10
+        },
+        {
+          "id": 254,
+          "question": "Which is the currency of Japan?",
+          "options": ["Yuan", "Yen", "Won", "Dollar"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Japanese currency is Yen",
+          "points": 10
+        },
+        {
+          "id": 255,
+          "question": "Which gas is essential for breathing?",
+          "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Oxygen is essential for breathing",
+          "points": 10
+        },
+        {
+          "id": 256,
+          "question": "Who invented the light bulb?",
+          "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Isaac Newton"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Thomas Edison invented the practical light bulb",
+          "points": 10
+        },
+        {
+          "id": 257,
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Venus", "Mercury", "Earth", "Mars"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Mercury is closest to the Sun",
+          "points": 10
+        },
+        {
+          "id": 258,
+          "question": "Which is the capital of India?",
+          "options": ["Mumbai", "Delhi", "Kolkata", "Chennai"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "New Delhi is the capital of India",
+          "points": 10
+        },
+        {
+          "id": 259,
+          "question": "Which is the national game of India?",
+          "options": ["Cricket", "Hockey", "Football", "Kabaddi"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Hockey is India's national game",
+          "points": 10
+        },
+        {
+          "id": 260,
+          "question": "Which is the smallest planet in our solar system?",
+          "options": ["Mercury", "Mars", "Venus", "Pluto"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "Mercury is the smallest planet",
+          "points": 10
+        },
+        {
+          "id": 261,
+          "question": "Which organ purifies blood in the human body?",
+          "options": ["Heart", "Kidney", "Lungs", "Liver"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Kidneys filter and purify blood",
+          "points": 10
+        },
+        {
+          "id": 262,
+          "question": "Which is the hottest planet in our solar system?",
+          "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Venus is the hottest planet due to greenhouse effect",
+          "points": 15
+        },
+        {
+          "id": 263,
+          "question": "How many continents are there in the world?",
+          "options": ["5", "6", "7", "8"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "There are 7 continents",
+          "points": 10
+        },
+        {
+          "id": 264,
+          "question": "Which famous wall can be seen from space?",
+          "options": ["The Berlin Wall", "The Great Wall of China", "Hadrian's Wall", "The Wailing Wall"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Great Wall of China is sometimes visible from space",
+          "points": 15
+        },
+        {
+          "id": 265,
+          "question": "What is the smallest country in the world by area?",
+          "options": ["Monaco", "Vatican City", "Nauru", "San Marino"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Vatican City is the smallest country",
+          "points": 15
+        },
+        {
+          "id": 266,
+          "question": "What is the chemical symbol for table salt?",
+          "options": ["KCl", "H2O", "NaCl", "CO2"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "NaCl is sodium chloride (table salt)",
+          "points": 10
+        },
+        {
+          "id": 267,
+          "question": "What is the primary source of light and heat for the Earth?",
+          "options": ["Moon", "Stars", "Sun", "Other Planets"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sun is the primary source of light and heat",
+          "points": 10
+        },
+        {
+          "id": 268,
+          "question": "Which sense organ is used for tasting?",
+          "options": ["Eye", "Ear", "Tongue", "Nose"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Tongue is used for tasting",
+          "points": 10
+        },
+        {
+          "id": 269,
+          "question": "The currency 'Euro' is used by most countries in which continent?",
+          "options": ["Asia", "North America", "Europe", "Africa"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Euro is used in European Union countries",
+          "points": 10
+        },
+        {
+          "id": 270,
+          "question": "Which of these is a flightless bird?",
+          "options": ["Eagle", "Pigeon", "Ostrich", "Parrot"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Ostrich is a flightless bird",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "English",
+      "description": "English Language and Literature",
+      "icon": "📚",
+      "questions": [
+        {
+          "id": 271,
+          "question": "Which of the following is a synonym for 'happy'?",
+          "options": ["Gloomy", "Joyful", "Angry", "Tired"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Joyful means very happy",
+          "points": 10
+        },
+        {
+          "id": 272,
+          "question": "Choose the correct spelling:",
+          "options": ["Definately", "Definitely", "Definitly", "Definatly"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Definitely is the correct spelling",
+          "points": 10
+        },
+        {
+          "id": 273,
+          "question": "What is the past tense of 'run'?",
+          "options": ["Running", "Ran", "Runned", "Rans"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Past tense of run is ran",
+          "points": 10
+        },
+        {
+          "id": 274,
+          "question": "What is the plural form of 'child'?",
+          "options": ["Childs", "Children", "Childs'", "Child'es"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Plural of child is children",
+          "points": 10
+        },
+        {
+          "id": 275,
+          "question": "Identify the noun in the sentence: 'The quick brown fox jumps over the lazy dog.'",
+          "options": ["Quick", "Jumps", "Fox", "Over"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Fox and dog are nouns in this sentence",
+          "points": 10
+        },
+        {
+          "id": 276,
+          "question": "Which word means the opposite of 'courage'?",
+          "options": ["Bravery", "Fear", "Strength", "Confidence"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Fear is the opposite of courage",
+          "points": 10
+        },
+        {
+          "id": 277,
+          "question": "Fill in the blank: 'I ______ to the store yesterday.'",
+          "options": ["go", "went", "gone", "going"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Went is the past tense of go",
+          "points": 10
+        },
+        {
+          "id": 278,
+          "question": "What is the synonym for 'large'?",
+          "options": ["Tiny", "Small", "Big", "Narrow"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Big is a synonym for large",
+          "points": 10
+        },
+        {
+          "id": 279,
+          "question": "Complete the sentence: 'She is a very ______ person.'",
+          "options": ["interest", "interested", "interesting", "interestingly"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Interesting describes the person",
+          "points": 15
+        },
+        {
+          "id": 280,
+          "question": "Identify the adjective in the sentence: 'The red car is fast.'",
+          "options": ["The", "Car", "Fast", "Is"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Fast is the adjective describing the car",
+          "points": 10
+        },
+        {
+          "id": 281,
+          "question": "What is the past participle of 'eat'?",
+          "options": ["Ate", "Eaten", "Eating", "Eats"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Eaten is the past participle of eat",
+          "points": 15
+        },
+        {
+          "id": 282,
+          "question": "Which of these is a collective noun for a group of lions?",
+          "options": ["Herd", "Pride", "Flock", "Pack"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Group of lions is called a pride",
+          "points": 15
+        },
+        {
+          "id": 283,
+          "question": "Fill in the blank: 'He swims ______ than me.'",
+          "options": ["good", "well", "better", "best"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Better is the comparative form of well",
+          "points": 15
+        },
+        {
+          "id": 284,
+          "question": "What is the antonym of 'ancient'?",
+          "options": ["Old", "Modern", "Historic", "Antique"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Modern is the opposite of ancient",
+          "points": 10
+        },
+        {
+          "id": 285,
+          "question": "Choose the correct form of the verb: 'She ______ her homework every day.'",
+          "options": ["do", "does", "doing", "did"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Does is used with third person singular",
+          "points": 10
+        },
+        {
+          "id": 286,
+          "question": "What is the plural of 'story'?",
+          "options": ["Storys", "Stories", "Storyes", "Storyes'"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Plural of story is stories",
+          "points": 10
+        },
+        {
+          "id": 287,
+          "question": "Identify the verb in the sentence: 'The birds sing in the morning.'",
+          "options": ["The", "Birds", "Sing", "Morning"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Sing is the verb in this sentence",
+          "points": 10
+        },
+        {
+          "id": 288,
+          "question": "Fill in the blank: 'The sun shines ______.'",
+          "options": ["bright", "brightly", "brighter", "brightness"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Brightly is the adverb form",
+          "points": 15
+        },
+        {
+          "id": 289,
+          "question": "What is the superlative form of 'good'?",
+          "options": ["Gooder", "Best", "More good", "Most good"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Best is the superlative form of good",
+          "points": 10
+        },
+        {
+          "id": 290,
+          "question": "What is the opposite of 'brave'?",
+          "options": ["Bold", "Courageous", "Cowardly", "Fearless"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Cowardly is the opposite of brave",
+          "points": 10
+        },
+        {
+          "id": 291,
+          "question": "Which of the following is a pronoun?",
+          "options": ["Table", "He", "Quickly", "Sing"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "He is a pronoun",
+          "points": 10
+        },
+        {
+          "id": 292,
+          "question": "Choose the correct form: 'The book is ______ the table.'",
+          "options": ["in", "on", "at", "with"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "On indicates position on surface",
+          "points": 10
+        },
+        {
+          "id": 293,
+          "question": "What is a 'homophone'?",
+          "options": ["Words that sound different but have the same meaning.", "Words that sound the same but have different meanings.", "Words with the same spelling but different meanings.", "Words that are difficult to pronounce."],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Homophones sound alike but have different meanings/spellings",
+          "points": 15
+        },
+        {
+          "id": 294,
+          "question": "What is the past tense of 'go'?",
+          "options": ["Goes", "Gone", "Went", "Going"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Went is the past tense of go",
+          "points": 10
+        },
+        {
+          "id": 295,
+          "question": "Which word is a preposition?",
+          "options": ["Quickly", "Jump", "Between", "Happily"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Between is a preposition",
+          "points": 15
+        },
+        {
+          "id": 296,
+          "question": "Complete the phrase: 'As cool as a ______.'",
+          "options": ["fire", "cucumber", "rock", "ice"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "As cool as a cucumber means very calm",
+          "points": 15
+        },
+        {
+          "id": 297,
+          "question": "What is the synonym for 'begin'?",
+          "options": ["End", "Start", "Finish", "Stop"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Start is a synonym for begin",
+          "points": 10
+        },
+        {
+          "id": 298,
+          "question": "Fill in the blank: 'The cat is sitting ______ the mat.'",
+          "options": ["on", "at", "in", "with"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "On indicates position on surface",
+          "points": 10
+        },
+        {
+          "id": 299,
+          "question": "Choose the sentence with correct subject-verb agreement:",
+          "options": ["They is going home", "She walk to the park", "The dog chases the cat", "We sings a song"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "The dog chases the cat has correct subject-verb agreement",
+          "points": 15
+        },
+        {
+          "id": 300,
+          "question": "What literary device involves the use of an object or idea to represent another?",
+          "options": ["Alliteration", "Hyperbole", "Symbolism", "Metaphor"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Symbolism uses objects to represent ideas",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Computer",
+      "description": "Computer Science and Technology",
+      "icon": "🖥️",
+      "questions": [
+        {
+          "id": 301,
+          "question": "Who is known as the 'Father of the Computer'?",
+          "options": ["Alan Turing", "Charles Babbage", "Bill Gates", "Steve Jobs"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Charles Babbage is considered Father of the Computer",
+          "points": 10
+        },
+        {
+          "id": 302,
+          "question": "What is the full form of 'CPU'?",
+          "options": ["Central Power Unit", "Control Processing Unit", "Central Processing Unit", "Computer Personal Unit"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "CPU stands for Central Processing Unit",
+          "points": 10
+        },
+        {
+          "id": 303,
+          "question": "The first mechanical calculator was developed by which scientist?",
+          "options": ["Blaise Pascal", "Konrad Zuse", "Herman Hollerith", "John von Neumann"],
+          "correctAnswer": 0,
+          "difficulty": "hard",
+          "explanation": "Blaise Pascal invented the mechanical calculator",
+          "points": 20
+        },
+        {
+          "id": 304,
+          "question": "What does 'RAM' stand for?",
+          "options": ["Read Access Memory", "Random Access Memory", "Read-only Memory", "Remote Access Module"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "RAM stands for Random Access Memory",
+          "points": 10
+        },
+        {
+          "id": 305,
+          "question": "What is the full form of 'URL'?",
+          "options": ["Uniform Resource Location", "Universal Reference Link", "Uniform Resource Locator", "Universal Resource Locator"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "URL stands for Uniform Resource Locator",
+          "points": 10
+        },
+        {
+          "id": 306,
+          "question": "Who co-founded Microsoft with Paul Allen?",
+          "options": ["Steve Jobs", "Larry Page", "Bill Gates", "Mark Zuckerberg"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Bill Gates co-founded Microsoft with Paul Allen",
+          "points": 10
+        },
+        {
+          "id": 307,
+          "question": "What does 'HTTP' stand for?",
+          "options": ["Hyper Text Transfer Protocol", "High Technology Transfer Program", "Hyperlink and Text Protocol", "Home Text Transfer Protocol"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "HTTP stands for Hyper Text Transfer Protocol",
+          "points": 10
+        },
+        {
+          "id": 308,
+          "question": "What is the function of a 'router' in a computer network?",
+          "options": ["To store data", "To display web pages", "To connect different networks", "To print documents"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "Router connects multiple networks and directs data packets",
+          "points": 15
+        },
+        {
+          "id": 309,
+          "question": "Which of these is a type of secondary storage device?",
+          "options": ["CPU", "RAM", "Hard Disk Drive", "Motherboard"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Hard Disk Drive is secondary storage",
+          "points": 10
+        },
+        {
+          "id": 310,
+          "question": "What is the full form of 'PDF'?",
+          "options": ["Public Document Format", "Portable Document Format", "Printable Data File", "Program Document File"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "PDF stands for Portable Document Format",
+          "points": 10
+        },
+        {
+          "id": 311,
+          "question": "Which company created the 'Android' mobile operating system?",
+          "options": ["Apple", "Google", "Microsoft", "Samsung"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Google created Android OS",
+          "points": 10
+        },
+        {
+          "id": 312,
+          "question": "What does 'WWW' stand for?",
+          "options": ["Wide World Web", "World Wide Web", "Web World Wide", "World Web Wide"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "WWW stands for World Wide Web",
+          "points": 10
+        },
+        {
+          "id": 313,
+          "question": "The first computer virus was created in which year?",
+          "options": ["1971", "1984", "1990", "1995"],
+          "correctAnswer": 0,
+          "difficulty": "hard",
+          "explanation": "First computer virus 'Creeper' appeared in 1971",
+          "points": 20
+        },
+        {
+          "id": 314,
+          "question": "What does 'ISP' stand for?",
+          "options": ["Internal Service Provider", "Internet Service Provider", "International Server Program", "Internet Security Protocol"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "ISP stands for Internet Service Provider",
+          "points": 10
+        },
+        {
+          "id": 315,
+          "question": "Which of these is an input device?",
+          "options": ["Monitor", "Printer", "Speaker", "Keyboard"],
+          "correctAnswer": 3,
+          "difficulty": "easy",
+          "explanation": "Keyboard is an input device",
+          "points": 10
+        },
+        {
+          "id": 316,
+          "question": "What is the full form of 'HTML'?",
+          "options": ["Hyper Text Markup Language", "High Tech Markup Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "HTML stands for Hyper Text Markup Language",
+          "points": 10
+        },
+        {
+          "id": 317,
+          "question": "The 'ENIAC' was the first general-purpose electronic computer. What does it stand for?",
+          "options": ["Electronic Numerical Integrator and Computer", "Electronic Network Integration and Calculation", "Electrical Numerical Instruction and Automation", "Electronic Numbering Interface and Calculation"],
+          "correctAnswer": 0,
+          "difficulty": "hard",
+          "explanation": "ENIAC stands for Electronic Numerical Integrator and Computer",
+          "points": 20
+        },
+        {
+          "id": 318,
+          "question": "What does 'VPN' stand for?",
+          "options": ["Virtual Private Network", "Verified Public Network", "Varying Protocol Network", "Virtual Personal Number"],
+          "correctAnswer": 0,
+          "difficulty": "medium",
+          "explanation": "VPN stands for Virtual Private Network",
+          "points": 15
+        },
+        {
+          "id": 319,
+          "question": "Which company is known for creating the 'Macintosh' computer?",
+          "options": ["Microsoft", "Dell", "Apple", "IBM"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Apple created Macintosh computers",
+          "points": 10
+        },
+        {
+          "id": 320,
+          "question": "What does 'ROM' stand for?",
+          "options": ["Random Only Memory", "Read-only Memory", "Running On Mainframe", "Real-time Operating Module"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "ROM stands for Read-only Memory",
+          "points": 10
+        },
+        {
+          "id": 321,
+          "question": "A 'firewall' is used for which purpose?",
+          "options": ["To speed up the internet", "To protect a computer from unauthorized access", "To clean the hard drive", "To install software"],
+          "correctAnswer": 1,
+          "difficulty": "medium",
+          "explanation": "Firewall protects against unauthorized network access",
+          "points": 15
+        },
+        {
+          "id": 322,
+          "question": "What does 'LAN' stand for?",
+          "options": ["Local Area Network", "Large Access Network", "Long-range Area Node", "Limited Access Network"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "LAN stands for Local Area Network",
+          "points": 10
+        },
+        {
+          "id": 323,
+          "question": "Who is credited with inventing the first 'mouse' for computers?",
+          "options": ["Steve Wozniak", "Bill Gates", "Douglas Engelbart", "Paul Allen"],
+          "correctAnswer": 2,
+          "difficulty": "hard",
+          "explanation": "Douglas Engelbart invented the computer mouse",
+          "points": 20
+        },
+        {
+          "id": 324,
+          "question": "What does 'GUI' stand for?",
+          "options": ["Global User Interface", "General Utility Interface", "Graphic User Interface", "Graphical User Interaction"],
+          "correctAnswer": 2,
+          "difficulty": "medium",
+          "explanation": "GUI stands for Graphic User Interface",
+          "points": 15
+        },
+        {
+          "id": 325,
+          "question": "Which of these is a programming language?",
+          "options": ["HTTP", "HTML", "Python", "JPEG"],
+          "correctAnswer": 2,
+          "difficulty": "easy",
+          "explanation": "Python is a programming language",
+          "points": 10
+        },
+        {
+          "id": 326,
+          "question": "What does 'USB' stand for?",
+          "options": ["Universal Serial Bus", "Unified System Bus", "Universal Serial Board", "Upgraded System Bus"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "USB stands for Universal Serial Bus",
+          "points": 10
+        },
+        {
+          "id": 327,
+          "question": "What is an 'operating system'?",
+          "options": ["A computer program for games", "Software that manages all the hardware and software resources of a computer", "A physical part of the computer", "A type of web browser"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "Operating system manages computer hardware and software resources",
+          "points": 10
+        },
+        {
+          "id": 328,
+          "question": "What does 'SQL' stand for?",
+          "options": ["Sequential Query Language", "Structured Query Language", "Simple Question Language", "System Query Locator"],
+          "correctAnswer": 1,
+          "difficulty": "easy",
+          "explanation": "SQL stands for Structured Query Language",
+          "points": 10
+        },
+        {
+          "id": 329,
+          "question": "The first computer hard disk drive was introduced by which company?",
+          "options": ["IBM", "Apple", "Seagate", "Western Digital"],
+          "correctAnswer": 0,
+          "difficulty": "hard",
+          "explanation": "IBM introduced the first hard disk drive in 1956",
+          "points": 20
+        },
+        {
+          "id": 330,
+          "question": "What is the full form of 'CD-ROM'?",
+          "options": ["Compact Disc-Read Only Memory", "Computer Drive-Read Once Memory", "Central Data-Read Only Module", "Compact Disc-Running Only Memory"],
+          "correctAnswer": 0,
+          "difficulty": "easy",
+          "explanation": "CD-ROM stands for Compact Disc-Read Only Memory",
+          "points": 10
+        }
+      ]
+    }
+  ]
+}
