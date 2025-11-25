@@ -48,7 +48,7 @@
                 
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li><a href="playquiz.html" class="nav-link">Play Quiz</a></li>
                         <li><a href="custom-mcq.html" class="nav-link">Custom MCQ</a></li>
                         <li><a href="ai-quiz.html" class="nav-link">AI Quiz</a></li>
@@ -58,7 +58,6 @@
                     </ul>
                     <div class="nav-btns">
                         <button class="login-btn glass-btn" id="login-btn">Login</button>
-                        <!-- <button class="signup-btn glass-btn" id="signup-btn">Sign Up</button> -->
                     </div>
                 </div>
 
@@ -86,7 +85,7 @@
                                 <p>Categories</p>
                             </div>
                             <div class="stat">
-                                <h3>50+</h3>
+                                <h3>500+</h3>
                                 <p>Daily Players</p>
                             </div>
                             <div class="stat">
@@ -98,9 +97,12 @@
                             <a href="playquiz.html" class="cta-btn primary">
                                 Start Quiz Now <i class="fas fa-rocket"></i>
                             </a>
-                            <button class="cta-btn secondary" id="watch-demo">
-                                Watch Demo <i class="fas fa-play"></i>
-                            </button>
+                            <a href="#ai-quiz-section" class="cta-btn secondary">
+                                Try AI Quiz <i class="fas fa-robot"></i>
+                            </a>
+                            <a href="custom-mcq.html" class="cta-btn secondary">
+                                Custom MCQ <i class="fas fa-magic"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -123,90 +125,198 @@
                 </div>
             </section>
 
-            <!-- Categories Section -->
-            <section class="categories-section">
+            <!-- Features Showcase Section -->
+            <section class="showcase-section">
                 <div class="container">
-                    <h2 class="section-title">Explore Our Categories</h2>
-                    <p class="section-subtitle">Choose your battlefield and showcase your knowledge</p>
+                    <div class="showcase-header">
+                        <h2 class="section-title">Why Choose <span class="gradient-text">QuizTantra</span>?</h2>
+                        <p class="section-subtitle">Experience the next generation of quiz platform with cutting-edge features</p>
+                    </div>
                     
-                    <div class="category-slider-container">
-                        <div class="slider-controls">
-                            <button class="slider-btn prev-btn">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="slider-btn next-btn">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
+                    <div class="showcase-grid">
+                        <div class="showcase-card ai-showcase">
+                            <div class="showcase-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI-Powered Quizzes</h3>
+                            <p>Generate custom quizzes instantly with our advanced AI technology. Get personalized questions based on your interests.</p>
+                            <a href="ai-quiz.html" class="showcase-btn">
+                                Explore AI Quiz <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <div class="category-slider" id="category-slider">
-                            <!-- Categories will be loaded by JavaScript -->
+                        
+                        <div class="showcase-card custom-showcase">
+                            <div class="showcase-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3>Custom MCQ Generator</h3>
+                            <p>Create your own quiz sets with our easy-to-use generator. Perfect for exam preparation and self-assessment.</p>
+                            <a href="custom-mcq.html" class="showcase-btn">
+                                Create Quiz <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="showcase-card leaderboard-showcase">
+                            <div class="showcase-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Global Leaderboard</h3>
+                            <p>Compete with players worldwide and climb the ranks. Showcase your knowledge and earn recognition.</p>
+                            <a href="leaderboard.html" class="showcase-btn">
+                                View Rankings <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section class="features-section">
+            <section class="categories-section">
+    <div class="container">
+        <div class="categories-header"> 
+            <h2 class="section-title">Explore Our <span class="gradient-text">Categories</span></h2>
+            <p class="section-subtitle">Choose your battlefield and showcase your knowledge</p>
+        </div>
+        
+        <div class="category-slider-container">
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="category-slider" id="category-slider">
+                </div>
+        </div>
+    </div>
+</section>
+
+            <!-- AI Quiz Section -->
+            <section class="ai-quiz-section" id="ai-quiz-section">
                 <div class="container">
-                    <h2 class="section-title">Why QuizMaster Stands Out</h2>
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-bolt"></i>
+                    <div class="ai-quiz-content">
+                        <div class="ai-quiz-text">
+                            <div class="badge">🤖 AI Powered</div>
+                            <h2 class="section-title">Experience <span class="gradient-text">AI-Generated</span> Quizzes</h2>
+                            <p class="section-subtitle">Get personalized quiz experiences powered by advanced artificial intelligence</p>
+                            
+                            <div class="ai-features">
+                                <div class="ai-feature">
+                                    <i class="fas fa-bolt"></i>
+                                    <div>
+                                        <h4>Instant Generation</h4>
+                                        <p>Create quizzes in seconds with AI technology</p>
+                                    </div>
+                                </div>
+                                <div class="ai-feature">
+                                    <i class="fas fa-user-cog"></i>
+                                    <div>
+                                        <h4>Personalized Content</h4>
+                                        <p>Questions tailored to your knowledge level</p>
+                                    </div>
+                                </div>
+                                <div class="ai-feature">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <h4>Adaptive Difficulty</h4>
+                                        <p>AI adjusts question difficulty based on performance</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Lightning Fast</h3>
-                            <p>Instant results with smooth animations and real-time feedback</p>
+                            
+                            <div class="ai-quiz-buttons">
+                                <a href="ai-quiz.html" class="cta-btn primary">
+                                    Try AI Quiz <i class="fas fa-robot"></i>
+                                </a>
+                                <a href="custom-mcq.html" class="cta-btn secondary">
+                                    Custom Generator <i class="fas fa-magic"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-layer-group"></i>
+                        
+                        <div class="ai-quiz-visual">
+                            <div class="ai-visual-card">
+                                <div class="ai-pulse"></div>
+                                <div class="ai-core">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="ai-orbits">
+                                    <div class="orbit orbit-1"></div>
+                                    <div class="orbit orbit-2"></div>
+                                    <div class="orbit orbit-3"></div>
+                                </div>
                             </div>
-                            <h3>Diverse Categories</h3>
-                            <p>10+ carefully curated categories with expert-level questions</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3>Universal Access</h3>
-                            <p>Optimized for all screen sizes and devices</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h3>Earn Rewards</h3>
-                            <p>Unlock achievements and climb the global leaderboard</p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            
 
             <!-- Stats Section -->
             <section class="stats-section">
                 <div class="container">
+                    <div class="stats-header">
+                        <h2 class="section-title">Our <span class="gradient-text">Community</span> Impact</h2>
+                        <p class="section-subtitle">Join thousands of learners who trust QuizTantra for their knowledge journey</p>
+                    </div>
+                    
                     <div class="stats-grid">
-                        <div class="stat-item">
-                            <i class="fas fa-users"></i>
-                            <h3>500+</h3>
-                            <p>Active Users</p>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>100+</h3>
+                                <p>Active Learners</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <i class="fas fa-question-circle"></i>
-                            <h3>500+</h3>
-                            <p>Questions</p>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>50+</h3>
+                                <p>Questions Available</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <i class="fas fa-trophy"></i>
-                            <h3>95%</h3>
-                            <p>Success Rate</p>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>95%</h3>
+                                <p>Success Rate</p>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <i class="fas fa-clock"></i>
-                            <h3>24/7</h3>
-                            <p>Available</p>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>24/7</h3>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Boost Your Knowledge?</h2>
+                        <p>Join QuizTantra today and start your learning journey with interactive quizzes and AI-powered features</p>
+                        <div class="cta-buttons">
+                            <a href="playquiz.html" class="cta-btn primary large">
+                                Start Quizzing Now <i class="fas fa-rocket"></i>
+                            </a>
+                            <a href="categories.html" class="cta-btn secondary">
+                                Explore Categories
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -219,23 +329,39 @@
                 <div class="footer-about">
                     <h3>QuizTantra</h3>
                     <p>The ultimate platform for testing your knowledge and learning through fun quizzes.</p>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="playquiz.html">Play Quiz</a>
-                    <a href="leaderboard.html">Leaderboard</a>
-                    <a href="about.html">About</a>
-                </div>
-
-                <div class="footer-social">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
+                    <div class="footer-social">
                         <a href="https://github.com/amankr421?tab=repositories"><i class="fab fa-github"></i></a>
                         <a href="https://x.com/AmanKumar41235?t=hf9WL_MpPzDalhpzqZTFPA&s=09"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/mr_aman421?igsh=MW93NnZ4MWFsaWtvaw=="><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/aman-kumar-216bbb255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="playquiz.html">Play Quiz</a>
+                    <a href="ai-quiz.html">AI Quiz</a>
+                    <a href="custom-mcq.html">Custom MCQ</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="leaderboard.html">Leaderboard</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to get notified about new features and quizzes</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="subscribe-btn">Subscribe</button>
                     </div>
                 </div>
             </div>

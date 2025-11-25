@@ -6,7 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let startTime;
     let timerInterval;
     let currentTopic = '';
-    
+    let quizSettings = {
+        answerMode: 'immediate', // 'immediate' or 'review'
+        timerMode: 'untimed', // 'timed' or 'untimed'
+        timeLimit: 10 // in minutes
+    };
+    let totalTime = 0; // in seconds
+    let timeLimit = 0; // in seconds
+
     // DOM Elements
     const generatorSection = document.getElementById('generator-section');
     const quizSection = document.getElementById('quiz-section');
@@ -21,6 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const copyPromptBtn = document.getElementById('copy-prompt');
     const generateBtn = document.getElementById('generate-btn');
     
+    // Quiz settings elements
+    const answerModeRadios = document.querySelectorAll('input[name="answer-mode"]');
+    const timerModeRadios = document.querySelectorAll('input[name="timer-mode"]');
+    const timeSettings = document.getElementById('time-settings');
+    const timeLimitSelect = document.getElementById('time-limit');
+    
     const quizTopic = document.getElementById('quiz-topic');
     const currentQuestionEl = document.getElementById('current-question');
     const totalQuestionsEl = document.getElementById('total-questions');
@@ -28,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const questionNumEl = document.getElementById('question-num');
     const questionTextEl = document.getElementById('question-text');
     const optionsContainer = document.getElementById('options-container');
+    const answerFeedback = document.getElementById('answer-feedback');
     const progressFill = document.getElementById('progress-fill');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
@@ -38,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultCorrect = document.getElementById('result-correct');
     const resultIncorrect = document.getElementById('result-incorrect');
     const resultTime = document.getElementById('result-time');
+    const normalScore = document.getElementById('normal-score');
+    const negativeScore = document.getElementById('negative-score');
     const reviewBtn = document.getElementById('review-btn');
     const newQuizBtn = document.getElementById('new-quiz-btn');
     const shareBtn = document.getElementById('share-btn');
@@ -45,12 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const reviewQuestions = document.getElementById('review-questions');
     const backResultsBtn = document.getElementById('back-results');
     const newQuizReviewBtn = document.getElementById('new-quiz-review');
-    
+
     // Event Listeners
     questionCountInput.addEventListener('input', updateQuestionCount);
     topicInput.addEventListener('input', updateAIPrompt);
     copyPromptBtn.addEventListener('click', copyPromptToClipboard);
     generateBtn.addEventListener('click', startQuiz);
+    
+    // Quiz settings event listeners
+    answerModeRadios.forEach(radio => {
+        radio.addEventListener('change', updateQuizSettings);
+    });
+    
+    timerModeRadios.forEach(radio => {
+        radio.addEventListener('change', updateQuizSettings);
+    });
+    
+    timeLimitSelect.addEventListener('change', updateQuizSettings);
+    
     prevBtn.addEventListener('click', showPreviousQuestion);
     nextBtn.addEventListener('click', showNextQuestion);
     reviewBtn.addEventListener('click', showReview);
@@ -61,7 +89,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize
     updateAIPrompt();
-    
+    updateQuizSettings();
+
+    // Update quiz settings
+    function updateQuizSettings() {
+        // Update answer mode
+        quizSettings.answerMode = document.querySelector('input[name="answer-mode"]:checked').value;
+        
+        // Update timer mode
+        quizSettings.timerMode = document.querySelector('input[name="timer-mode"]:checked').value;
+        
+        // Show/hide time settings
+        if (quizSettings.timerMode === 'timed') {
+            timeSettings.style.display = 'block';
+            quizSettings.timeLimit = parseInt(timeLimitSelect.value);
+        } else {
+            timeSettings.style.display = 'none';
+        }
+    }
+
     // Update question count display
     function updateQuestionCount() {
         const count = questionCountInput.value;
@@ -137,6 +183,14 @@ Continue with Q2 to Q${count} in same format. Make questions conceptual and exam
         userAnswers = new Array(questions.length).fill(null);
         currentQuestionIndex = 0;
         currentTopic = topic || 'Custom Quiz';
+        totalTime = 0;
+        
+        // Set time limit
+        if (quizSettings.timerMode === 'timed') {
+            timeLimit = quizSettings.timeLimit * 60; // Convert to seconds
+        } else {
+            timeLimit = 0; // No time limit
+        }
         
         // Update UI
         quizTopic.textContent = currentTopic;
@@ -155,101 +209,100 @@ Continue with Q2 to Q${count} in same format. Make questions conceptual and exam
         displayQuestion(currentQuestionIndex);
     }
     
-    // Parse MCQ text
     // Parse MCQ text - IMPROVED VERSION
-function parseMCQText(text) {
-    const questions = [];
-    
-    // First, try to detect if it's single-line format and add line breaks
-    let formattedText = text;
-    
-    // Add line breaks after questions, options, answers, and explanations
-    formattedText = formattedText
-        .replace(/(Q\d+\.)/g, '\n$1')  // Add break before Q
-        .replace(/([A-D]\))/g, '\n$1') // Add break before options
-        .replace(/(Answer:)/g, '\n$1') // Add break before Answer
-        .replace(/(Explanation:)/g, '\n$1'); // Add break before Explanation
-    
-    const questionBlocks = formattedText.split(/(?=Q\d+\.)/).filter(block => block.trim());
-    
-    for (const block of questionBlocks) {
-        try {
-            const lines = block.trim().split('\n').filter(line => line.trim());
-            
-            if (lines.length < 7) {
-                console.log('Skipping block - insufficient lines:', lines);
-                continue;
-            }
-            
-            // Extract question number and text
-            const questionMatch = lines[0].match(/Q(\d+)\.\s*(.+)/);
-            if (!questionMatch) {
-                console.log('No question match for:', lines[0]);
-                continue;
-            }
-            
-            const questionNumber = parseInt(questionMatch[1]);
-            const questionText = questionMatch[2].trim();
-            
-            // Extract options (next 4 lines starting with A), B), C), D)
-            const options = [];
-            let optionIndex = 1;
-            
-            while (optionIndex < lines.length && optionIndex <= 4) {
-                if (lines[optionIndex] && lines[optionIndex].match(/^[A-D]\)/)) {
-                    const optionText = lines[optionIndex].substring(3).trim();
-                    options.push(optionText);
-                    optionIndex++;
-                } else {
-                    break;
+    function parseMCQText(text) {
+        const questions = [];
+        
+        // First, try to detect if it's single-line format and add line breaks
+        let formattedText = text;
+        
+        // Add line breaks after questions, options, answers, and explanations
+        formattedText = formattedText
+            .replace(/(Q\d+\.)/g, '\n$1')  // Add break before Q
+            .replace(/([A-D]\))/g, '\n$1') // Add break before options
+            .replace(/(Answer:)/g, '\n$1') // Add break before Answer
+            .replace(/(Explanation:)/g, '\n$1'); // Add break before Explanation
+        
+        const questionBlocks = formattedText.split(/(?=Q\d+\.)/).filter(block => block.trim());
+        
+        for (const block of questionBlocks) {
+            try {
+                const lines = block.trim().split('\n').filter(line => line.trim());
+                
+                if (lines.length < 7) {
+                    console.log('Skipping block - insufficient lines:', lines);
+                    continue;
                 }
-            }
-            
-            // Extract answer and explanation
-            let correctAnswer = '';
-            let explanation = '';
-            
-            for (let i = optionIndex; i < lines.length; i++) {
-                if (lines[i].startsWith('Answer:')) {
-                    correctAnswer = lines[i].substring(7).trim().charAt(0); // Take only first character
-                } else if (lines[i].startsWith('Explanation:')) {
-                    explanation = lines[i].substring(12).trim();
-                    // If explanation continues on next lines
-                    for (let j = i + 1; j < lines.length; j++) {
-                        if (lines[j] && !lines[j].startsWith('Q')) {
-                            explanation += ' ' + lines[j].trim();
-                        } else {
-                            break;
-                        }
+                
+                // Extract question number and text
+                const questionMatch = lines[0].match(/Q(\d+)\.\s*(.+)/);
+                if (!questionMatch) {
+                    console.log('No question match for:', lines[0]);
+                    continue;
+                }
+                
+                const questionNumber = parseInt(questionMatch[1]);
+                const questionText = questionMatch[2].trim();
+                
+                // Extract options (next 4 lines starting with A), B), C), D)
+                const options = [];
+                let optionIndex = 1;
+                
+                while (optionIndex < lines.length && optionIndex <= 4) {
+                    if (lines[optionIndex] && lines[optionIndex].match(/^[A-D]\)/)) {
+                        const optionText = lines[optionIndex].substring(3).trim();
+                        options.push(optionText);
+                        optionIndex++;
+                    } else {
+                        break;
                     }
-                    break;
                 }
+                
+                // Extract answer and explanation
+                let correctAnswer = '';
+                let explanation = '';
+                
+                for (let i = optionIndex; i < lines.length; i++) {
+                    if (lines[i].startsWith('Answer:')) {
+                        correctAnswer = lines[i].substring(7).trim().charAt(0); // Take only first character
+                    } else if (lines[i].startsWith('Explanation:')) {
+                        explanation = lines[i].substring(12).trim();
+                        // If explanation continues on next lines
+                        for (let j = i + 1; j < lines.length; j++) {
+                            if (lines[j] && !lines[j].startsWith('Q')) {
+                                explanation += ' ' + lines[j].trim();
+                            } else {
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                }
+                
+                if (questionText && options.length === 4 && correctAnswer) {
+                    questions.push({
+                        number: questionNumber,
+                        text: questionText,
+                        options: options,
+                        correctAnswer: correctAnswer,
+                        explanation: explanation || 'No explanation provided.'
+                    });
+                    console.log('Successfully parsed question:', questionNumber);
+                } else {
+                    console.log('Invalid question format:', {
+                        questionText: !!questionText,
+                        options: options.length,
+                        correctAnswer: !!correctAnswer
+                    });
+                }
+            } catch (error) {
+                console.error('Error parsing question block:', error, 'Block:', block);
             }
-            
-            if (questionText && options.length === 4 && correctAnswer) {
-                questions.push({
-                    number: questionNumber,
-                    text: questionText,
-                    options: options,
-                    correctAnswer: correctAnswer,
-                    explanation: explanation || 'No explanation provided.'
-                });
-                console.log('Successfully parsed question:', questionNumber);
-            } else {
-                console.log('Invalid question format:', {
-                    questionText: !!questionText,
-                    options: options.length,
-                    correctAnswer: !!correctAnswer
-                });
-            }
-        } catch (error) {
-            console.error('Error parsing question block:', error, 'Block:', block);
         }
+        
+        console.log('Total questions parsed:', questions.length);
+        return questions;
     }
-    
-    console.log('Total questions parsed:', questions.length);
-    return questions;
-}
     
     // Generate sample questions (for demo)
     function generateSampleQuestions(topic, count) {
@@ -285,26 +338,48 @@ function parseMCQText(text) {
         questionNumEl.textContent = index + 1;
         questionTextEl.textContent = question.text;
         
-        // Clear options
+        // Clear options and feedback
         optionsContainer.innerHTML = '';
+        answerFeedback.style.display = 'none';
         
         // Add options
         const optionLabels = ['A', 'B', 'C', 'D'];
         optionLabels.forEach((label, i) => {
             const option = document.createElement('div');
             option.className = 'option';
+            
+            // Check if this option was previously selected
             if (userAnswers[index] === label) {
                 option.classList.add('selected');
+                
+                // If in immediate feedback mode and answer was selected, show feedback
+                if (quizSettings.answerMode === 'immediate') {
+                    if (label === question.correctAnswer) {
+                        option.classList.add('correct');
+                    } else {
+                        option.classList.add('incorrect');
+                    }
+                }
+            }
+            
+            // If in immediate mode and this is the correct answer, mark it
+            if (quizSettings.answerMode === 'immediate' && userAnswers[index] && label === question.correctAnswer) {
+                option.classList.add('correct');
             }
             
             option.innerHTML = `
-                <div class="option-label"></div>
+                <div class="option-label">${label}</div>
                 <div class="option-text">${question.options[i]}</div>
             `;
             
             option.addEventListener('click', () => selectOption(label));
             optionsContainer.appendChild(option);
         });
+        
+        // Show feedback if in immediate mode and answer was selected
+        if (quizSettings.answerMode === 'immediate' && userAnswers[index]) {
+            showAnswerFeedback(index);
+        }
         
         // Update navigation buttons
         prevBtn.disabled = index === 0;
@@ -327,17 +402,63 @@ function parseMCQText(text) {
         // Update UI
         const options = optionsContainer.querySelectorAll('.option');
         options.forEach(opt => {
-            opt.classList.remove('selected');
+            opt.classList.remove('selected', 'correct', 'incorrect');
         });
         
         const selectedOption = Array.from(options).find(opt => {
-            const label = opt.querySelector('.option-text').textContent;
-            return questions[currentQuestionIndex].options[['A','B','C','D'].indexOf(option)] === label;
+            const label = opt.querySelector('.option-label').textContent;
+            return label === option;
         });
         
         if (selectedOption) {
             selectedOption.classList.add('selected');
+            
+            // If in immediate feedback mode, show feedback immediately
+            if (quizSettings.answerMode === 'immediate') {
+                const question = questions[currentQuestionIndex];
+                
+                if (option === question.correctAnswer) {
+                    selectedOption.classList.add('correct');
+                } else {
+                    selectedOption.classList.add('incorrect');
+                    
+                    // Also highlight the correct answer
+                    const correctOption = Array.from(options).find(opt => {
+                        const label = opt.querySelector('.option-label').textContent;
+                        return label === question.correctAnswer;
+                    });
+                    if (correctOption) {
+                        correctOption.classList.add('correct');
+                    }
+                }
+                
+                showAnswerFeedback(currentQuestionIndex);
+            }
         }
+    }
+    
+    // Show answer feedback
+    function showAnswerFeedback(index) {
+        const question = questions[index];
+        const userAnswer = userAnswers[index];
+        const isCorrect = userAnswer === question.correctAnswer;
+        
+        answerFeedback.className = `answer-feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+        answerFeedback.style.display = 'block';
+        
+        const feedbackIcon = answerFeedback.querySelector('.feedback-icon');
+        const feedbackTitle = answerFeedback.querySelector('.feedback-title');
+        const feedbackExplanation = answerFeedback.querySelector('.feedback-explanation');
+        
+        if (isCorrect) {
+            feedbackIcon.innerHTML = '✓';
+            feedbackTitle.textContent = 'Correct!';
+        } else {
+            feedbackIcon.innerHTML = '✗';
+            feedbackTitle.textContent = `Incorrect! Correct answer is ${question.correctAnswer}`;
+        }
+        
+        feedbackExplanation.textContent = question.explanation;
     }
     
     // Update progress bar
@@ -373,25 +494,31 @@ function parseMCQText(text) {
         // Calculate results
         let correctCount = 0;
         let incorrectCount = 0;
+        let unansweredCount = 0;
         
         for (let i = 0; i < questions.length; i++) {
             if (userAnswers[i] === questions[i].correctAnswer) {
                 correctCount++;
             } else if (userAnswers[i] !== null) {
                 incorrectCount++;
+            } else {
+                unansweredCount++;
             }
         }
         
-        // Calculate score with negative marking (4 for correct, -1 for incorrect)
-        const score = Math.max(0, (correctCount * 4) - incorrectCount);
+        // Calculate scores
+        const normalScoreValue = correctCount;
+        const negativeScoreValue = Math.max(0, correctCount - (incorrectCount * 0.25));
         
         // Update results UI
-        finalScore.textContent = score;
+        finalScore.textContent = negativeScoreValue.toFixed(2);
         resultTopic.textContent = currentTopic;
         resultTotal.textContent = questions.length;
         resultCorrect.textContent = correctCount;
         resultIncorrect.textContent = incorrectCount;
         resultTime.textContent = quizTimer.textContent;
+        normalScore.textContent = `${normalScoreValue}/${questions.length}`;
+        negativeScore.textContent = negativeScoreValue.toFixed(2);
         
         // Show results section
         showSection(resultsSection);
@@ -522,11 +649,25 @@ function parseMCQText(text) {
         timerInterval = setInterval(() => {
             const now = new Date();
             const elapsed = Math.floor((now - startTime) / 1000);
+            totalTime = elapsed;
+            
+            // Check if time limit is reached
+            if (timeLimit > 0 && elapsed >= timeLimit) {
+                clearInterval(timerInterval);
+                submitQuiz();
+                return;
+            }
             
             const minutes = Math.floor(elapsed / 60);
             const seconds = elapsed % 60;
             
             quizTimer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Show warning when 1 minute remaining
+            if (timeLimit > 0 && timeLimit - elapsed <= 60) {
+                quizTimer.style.color = '#e74c3c';
+                quizTimer.style.fontWeight = 'bold';
+            }
         }, 1000);
     }
 });

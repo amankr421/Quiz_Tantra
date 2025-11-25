@@ -1,14 +1,41 @@
-
+// Theme management
 document.addEventListener('DOMContentLoaded', function() {
+    initTheme();
     loadCurrentCategories();
     loadFutureCategories();
     initCategoryAnimations();
+    initHamburgerMenu();
 });
+
+function initTheme() {
+    const themeSwitch = document.getElementById('theme-switch');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    
+    // Set initial theme
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeSwitch.checked = savedTheme === 'dark';
+    
+    // Theme switch event
+    themeSwitch.addEventListener('change', function() {
+        const theme = this.checked ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    });
+}
+
+function initHamburgerMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+}
 
 function loadCurrentCategories() {
     const container = document.getElementById('current-categories');
     if (!container) return;
-
 
     const categories = [
         {
@@ -16,8 +43,8 @@ function loadCurrentCategories() {
             title: 'General Knowledge',
             icon: 'fas fa-globe-americas',
             description: 'Test your knowledge of current affairs, history, geography, and everyday facts.',
-            questions: '30', 
-            players: '50+', 
+            questions: '30',
+            players: '50+',
             color: 'linear-gradient(135deg, #3498db, #8e44ad)'
         },
         {
@@ -31,12 +58,12 @@ function loadCurrentCategories() {
         },
         {
             id: 'ai',
-            title: 'AI & Atrificial Intellegence',
-            icon: 'fas fa-laptop-code',
-            description: 'Challenge your AI skills with Simple Ai related Questions.',
+            title: 'AI & Artificial Intelligence',
+            icon: 'fas fa-robot',
+            description: 'Challenge your AI skills with Simple AI related Questions.',
             questions: '450',
             players: '50+',
-            color: 'linear-gradient(135deg, #e74c3c, #f39c12)'
+            color: 'linear-gradient(135deg, #9b59b6, #3498db)'
         },
         {
             id: 'maths',
@@ -44,7 +71,7 @@ function loadCurrentCategories() {
             icon: 'fas fa-calculator',
             description: 'Solve complex problems and puzzles to sharpen your mathematical thinking.',
             questions: '30',
-            players: '50+', 
+            players: '50+',
             color: 'linear-gradient(135deg, #27ae60, #2ecc71)'
         },
         {
@@ -61,7 +88,7 @@ function loadCurrentCategories() {
             title: 'History & Civilization',
             icon: 'fas fa-monument',
             description: 'Journey through time and explore ancient civilizations and historical events.',
-            questions: '30', 
+            questions: '30',
             players: '50+',
             color: 'linear-gradient(135deg, #e67e22, #f1c40f)'
         },
@@ -70,7 +97,7 @@ function loadCurrentCategories() {
             title: 'Geography',
             icon: 'fas fa-map-marked-alt',
             description: 'Discover countries, capitals, landmarks, and geographical wonders.',
-            questions: '30', 
+            questions: '30',
             players: '50+',
             color: 'linear-gradient(135deg, #1abc9c, #16a085)'
         },
@@ -79,7 +106,7 @@ function loadCurrentCategories() {
             title: 'Sports',
             icon: 'fas fa-football-ball',
             description: 'Test your knowledge of sports history, rules, and legendary athletes.',
-            questions: '30', 
+            questions: '30',
             players: '50+',
             color: 'linear-gradient(135deg, #e74c3c, #c0392b)'
         },
@@ -106,7 +133,7 @@ function loadCurrentCategories() {
             title: 'Logic & Puzzles',
             icon: 'fas fa-brain',
             description: 'Exercise your brain with riddles, logical puzzles, and critical thinking challenges.',
-            questions: '30', 
+            questions: '30',
             players: '50+',
             color: 'linear-gradient(135deg, #34495e, #2c3e50)'
         }
@@ -212,4 +239,3 @@ function startQuiz(categoryId) {
     localStorage.setItem('selectedCategory', categoryId);
     window.location.href = 'playquiz.html';
 }
-

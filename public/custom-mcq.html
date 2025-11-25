@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Theme Toggle -->
         <div class="theme-toggle">
             <input type="checkbox" id="theme-switch" class="theme-switch">
             <label for="theme-switch" class="theme-label">
@@ -21,14 +20,13 @@
             </label>
         </div>
 
-        <!-- Navbar -->
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
                     <img src="images/logo2.png" alt="QuizTantra Logo" class="logo-img">
                     <span>QuizTantra</span>
                 </div>
-                
+
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-links">
                         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -53,9 +51,7 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <main class="main-content">
-            <!-- Generator Section -->
             <section class="generator-section active" id="generator-section">
                 <div class="container">
                     <div class="generator-header">
@@ -64,19 +60,18 @@
                         <p class="section-subtitle">Generate personalized quizzes with AI and practice at your own pace</p>
                     </div>
 
-                    <!-- Main Generator Area - Full Width -->
                     <div class="generator-main">
                         <div class="generator-card">
                             <div class="card-header">
                                 <i class="fas fa-magic"></i>
                                 <h3>Generate Your Quiz</h3>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="topic-input">Enter Topic</label>
                                 <input type="text" id="topic-input" class="form-control" placeholder="e.g., Space Exploration, Networking, Python Programming">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="question-count">Number of Questions</label>
                                 <div class="range-container">
@@ -84,6 +79,49 @@
                                     <div class="range-value">
                                         <span id="count-display">5</span> Questions
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-settings">
+                                <div class="setting-group">
+                                    <label class="setting-label">Show Answers During Quiz?</label>
+                                    <div class="toggle-group">
+                                        <label class="toggle-option">
+                                            <input type="radio" name="answer-mode" value="immediate" checked>
+                                            <span class="toggle-btn">Yes, show immediately</span>
+                                        </label>
+                                        <label class="toggle-option">
+                                            <input type="radio" name="answer-mode" value="review">
+                                            <span class="toggle-btn">No, show after quiz</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="setting-group">
+                                    <label class="setting-label">Do you want to add time limit?</label>
+                                    <div class="toggle-group">
+                                        <label class="toggle-option">
+                                            <input type="radio" name="timer-mode" value="timed">
+                                            <span class="toggle-btn">Yes, add timer</span>
+                                        </label>
+                                        <label class="toggle-option">
+                                            <input type="radio" name="timer-mode" value="untimed" checked>
+                                            <span class="toggle-btn">No timer</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="time-settings" id="time-settings" style="display: none;">
+                                    <label for="time-limit">Set Time Limit (minutes)</label>
+                                    <select id="time-limit" class="form-control">
+                                        <option value="5">5 minutes</option>
+                                        <option value="10">10 minutes</option>
+                                        <option value="15">15 minutes</option>
+                                        <option value="20">20 minutes</option>
+                                        <option value="30">30 minutes</option>
+                                        <option value="45">45 minutes</option>
+                                        <option value="60">60 minutes</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -121,7 +159,6 @@
                             </button>
                         </div>
 
-                        <!-- Instructions moved to sidebar -->
                         <div class="instructions-card">
                             <div class="card-header">
                                 <i class="fas fa-info-circle"></i>
@@ -132,57 +169,72 @@
                                     <div class="step-number">1</div>
                                     <div class="step-content">
                                         <h4>Enter Topic</h4>
-                                        <p>Choose your topic of interest</p>
+                                        <p>Type your quiz subject</p>
                                     </div>
                                 </div>
                                 <div class="instruction-step">
                                     <div class="step-number">2</div>
                                     <div class="step-content">
-                                        <h4>Copy Prompt</h4>
-                                        <p>Use the AI prompt with any AI tool</p>
+                                        <h4>Set Questions</h4>
+                                        <p>Choose 1-100 questions</p>
                                     </div>
                                 </div>
                                 <div class="instruction-step">
                                     <div class="step-number">3</div>
                                     <div class="step-content">
-                                        <h4>Paste & Start</h4>
-                                        <p>Paste results and begin practice</p>
+                                        <h4>Answer Mode</h4>
+                                        <p>Show answers now or later</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Instructions moved to bottom section -->
-                    <div class="instructions-section">
-                        <div class="instructions-grid">
-                            <div class="instruction-card">
-                                <div class="instruction-icon">
-                                    <i class="fas fa-edit"></i>
+                                <div class="instruction-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Timer Settings</h4>
+                                        <p>Set time limit if needed</p>
+                                    </div>
                                 </div>
-                                <h3>Enter Topic & Questions</h3>
-                                <p>Choose your topic and select number of questions (1-100)</p>
-                            </div>
-                            <div class="instruction-card">
-                                <div class="instruction-icon">
-                                    <i class="fas fa-copy"></i>
+                                <div class="instruction-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Copy Prompt</h4>
+                                        <p>Get AI ready text</p>
+                                    </div>
                                 </div>
-                                <h3>Copy AI Prompt</h3>
-                                <p>Copy the generated prompt and paste in ChatGPT, Gemini, or any AI</p>
-                            </div>
-                            <div class="instruction-card">
-                                <div class="instruction-icon">
-                                    <i class="fas fa-paste"></i>
+                                <div class="instruction-step">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        <h4>Use AI</h4>
+                                        <p>Paste in ChatGPT/Gemini</p>
+                                    </div>
                                 </div>
-                                <h3>Paste Questions</h3>
-                                <p>Copy AI's response and paste in the text area</p>
-                            </div>
-                            <div class="instruction-card">
-                                <div class="instruction-icon">
-                                    <i class="fas fa-play"></i>
+                                <div class="instruction-step">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">
+                                        <h4>Get Questions</h4>
+                                        <p>Copy AI response</p>
+                                    </div>
                                 </div>
-                                <h3>Start Practice</h3>
-                                <p>Click "Start Quiz" and begin your MCQ practice session</p>
+                                <div class="instruction-step">
+                                    <div class="step-number">8</div>
+                                    <div class="step-content">
+                                        <h4>Paste Here</h4>
+                                        <p>Input questions below</p>
+                                    </div>
+                                </div>
+                                <div class="instruction-step">
+                                    <div class="step-number">9</div>
+                                    <div class="step-content">
+                                        <h4>Start Quiz</h4>
+                                        <p>Begin practice session</p>
+                                    </div>
+                                </div>
+                                <div class="instruction-step">
+                                    <div class="step-number">10</div>
+                                    <div class="step-content">
+                                        <h4>View Results</h4>
+                                        <p>See score & explanations</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -210,7 +262,6 @@ Explanation: Understanding core principles is essential for space exploration.
                 </div>
             </section>
 
-            <!-- Quiz Section -->
             <section class="quiz-section" id="quiz-section">
                 <div class="container">
                     <div class="quiz-header">
@@ -243,12 +294,21 @@ Explanation: Understanding core principles is essential for space exploration.
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="question-content">
                             <h3 class="question-text" id="question-text">Which concept is important in Space Exploration?</h3>
-                            
+
                             <div class="options-container" id="options-container">
-                                <!-- Options will be loaded here -->
+                                </div>
+
+                            <div class="answer-feedback" id="answer-feedback" style="display: none;">
+                                <div class="feedback-content">
+                                    <div class="feedback-icon"></div>
+                                    <div class="feedback-text">
+                                        <div class="feedback-title"></div>
+                                        <div class="feedback-explanation"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -264,7 +324,6 @@ Explanation: Understanding core principles is essential for space exploration.
                 </div>
             </section>
 
-            <!-- Results Section -->
             <section class="results-section" id="results-section">
                 <div class="container">
                     <div class="results-header">
@@ -281,7 +340,7 @@ Explanation: Understanding core principles is essential for space exploration.
                                 <div class="score-value" id="final-score">1</div>
                                 <div class="score-label">Score</div>
                             </div>
-                            
+
                             <div class="score-details">
                                 <div class="detail-item">
                                     <div class="detail-label">Topic</div>
@@ -303,6 +362,14 @@ Explanation: Understanding core principles is essential for space exploration.
                                     <div class="detail-label">Time Taken</div>
                                     <div class="detail-value" id="result-time">0:38</div>
                                 </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Normal Score</div>
+                                    <div class="detail-value" id="normal-score">1/5</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-label">Negative Score</div>
+                                    <div class="detail-value negative" id="negative-score">0.75</div>
+                                </div>
                             </div>
                         </div>
 
@@ -321,7 +388,6 @@ Explanation: Understanding core principles is essential for space exploration.
                 </div>
             </section>
 
-            <!-- Review Section -->
             <section class="review-section" id="review-section">
                 <div class="container">
                     <div class="review-header">
@@ -330,8 +396,7 @@ Explanation: Understanding core principles is essential for space exploration.
                     </div>
 
                     <div class="review-questions" id="review-questions">
-                        <!-- Questions will be loaded here -->
-                    </div>
+                        </div>
 
                     <div class="review-actions">
                         <button class="action-btn back-results" id="back-results">
@@ -345,7 +410,6 @@ Explanation: Understanding core principles is essential for space exploration.
             </section>
         </main>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-about">
