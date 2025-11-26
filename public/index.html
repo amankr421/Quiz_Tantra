@@ -71,6 +71,7 @@
 
         <!-- Home Content -->
         <main class="main-content">
+            
             <!-- Hero Section -->
             <section class="hero-section">
                 <div class="hero-content">
@@ -170,27 +171,29 @@
                 </div>
             </section>
 
+            <!-- Categories Section -->
             <section class="categories-section">
-    <div class="container">
-        <div class="categories-header"> 
-            <h2 class="section-title">Explore Our <span class="gradient-text">Categories</span></h2>
-            <p class="section-subtitle">Choose your battlefield and showcase your knowledge</p>
-        </div>
-        
-        <div class="category-slider-container">
-            <div class="slider-controls">
-                <button class="slider-btn prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-btn next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="category-slider" id="category-slider">
+                <div class="container">
+                    <div class="categories-header"> 
+                        <h2 class="section-title">Explore Our <span class="gradient-text">Categories</span></h2>
+                        <p class="section-subtitle">Choose your battlefield and showcase your knowledge</p>
+                    </div>
+                    
+                    <div class="category-slider-container">
+                        <div class="slider-controls">
+                            <button class="slider-btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="category-slider" id="category-slider">
+                            <!-- Categories will be loaded here -->
+                        </div>
+                    </div>
                 </div>
-        </div>
-    </div>
-</section>
+            </section>
 
             <!-- AI Quiz Section -->
             <section class="ai-quiz-section" id="ai-quiz-section">
@@ -203,22 +206,28 @@
                             
                             <div class="ai-features">
                                 <div class="ai-feature">
-                                    <i class="fas fa-bolt"></i>
-                                    <div>
+                                    <div class="feature-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div class="feature-content">
                                         <h4>Instant Generation</h4>
                                         <p>Create quizzes in seconds with AI technology</p>
                                     </div>
                                 </div>
                                 <div class="ai-feature">
-                                    <i class="fas fa-user-cog"></i>
-                                    <div>
+                                    <div class="feature-icon">
+                                        <i class="fas fa-user-cog"></i>
+                                    </div>
+                                    <div class="feature-content">
                                         <h4>Personalized Content</h4>
                                         <p>Questions tailored to your knowledge level</p>
                                     </div>
                                 </div>
                                 <div class="ai-feature">
-                                    <i class="fas fa-chart-line"></i>
-                                    <div>
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="feature-content">
                                         <h4>Adaptive Difficulty</h4>
                                         <p>AI adjusts question difficulty based on performance</p>
                                     </div>
@@ -236,15 +245,33 @@
                         </div>
                         
                         <div class="ai-quiz-visual">
-                            <div class="ai-visual-card">
-                                <div class="ai-pulse"></div>
-                                <div class="ai-core">
-                                    <i class="fas fa-brain"></i>
+                            <div class="visual-container">
+                                <div class="floating-card card-1">
+                                    <div class="card-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4>Smart Questions</h4>
+                                    <p>Contextually relevant content</p>
                                 </div>
-                                <div class="ai-orbits">
-                                    <div class="orbit orbit-1"></div>
-                                    <div class="orbit orbit-2"></div>
-                                    <div class="orbit orbit-3"></div>
+                                <div class="floating-card card-2">
+                                    <div class="card-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <h4>Rapid Creation</h4>
+                                    <p>Generate in seconds</p>
+                                </div>
+                                <div class="floating-card card-3">
+                                    <div class="card-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <h4>Adaptive Logic</h4>
+                                    <p>Learns from your answers</p>
+                                </div>
+                                <div class="main-visual">
+                                    <div class="ai-chip">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <div class="glow-effect"></div>
                                 </div>
                             </div>
                         </div>
